@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+  width: 100%;
+    
+    .hero-text {
+      width: 50%;
+    }
+  .hero-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 380px;
+      object-fit: contain;
+    }
+    }
+}
+
