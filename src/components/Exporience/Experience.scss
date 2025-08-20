@@ -1,0 +1,33 @@
+.accordion {
+  &-header {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  &-item {
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    p {
+      font-size: 1.1rem;
+      color: gray;
+
+      h3 {
+        font-size: 1.5rem;
+        margin: 2px 0 2px 0;
+        color: black;
+      }
+    }
+  }
+
+  &-content {
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+}
