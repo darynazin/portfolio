@@ -16,10 +16,9 @@ function Experience() {
               onClick={() => setActiveIndex(activeIndex === idx ? null : idx)}
             >
               <div>
-                <p>{title.company}
-                  <h3>{title.position}</h3>
-                  ({title.duration})
-                </p>
+                <p>{title.company}</p>
+                <h3 className="accordion-position">{title.position}</h3>
+                <p>({title.duration})</p>
               </div>
               {activeIndex === idx ? '▼' : '▶'}
             </div>

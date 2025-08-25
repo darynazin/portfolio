@@ -1,13 +1,4 @@
-// .projects {
-
-//   &-header {
-//     font-size: 1.5rem;
-//     margin-bottom: 40px;
-//   }
-// }
 .projects {
-  padding: 2rem;
-  color: white;
 
   h2 {
     font-size: 1.5rem;
@@ -17,72 +8,73 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
   }
 }
 
 .project-card {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  color: white;
   background: #161b22;
-  border-radius: 16px;
-  padding: 2rem;
+  padding: 6rem;
   gap: 2rem;
-
-  &.featured {
-    border: 1px solid #2d6cdf;
-  }
+  align-items: center;
 
   &__content {
-    flex: 1;
-    max-width: 500px;
+    width: 55%;
+    z-index: 1;
+  }
 
-    .project-card__label {
-      font-size: 0.9rem;
-      opacity: 0.7;
-      margin-bottom: 0.5rem;
-    }
+  &__label {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+  }
 
-    .project-card__title {
-      color: #1fb5d4;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
+  &__title {
+    color: #1fb5d4;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 
-    .project-card__desc {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
+  &__desc {
+    background: #282d32;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
 
-    .project-card__tech {
-      color: #1fb5d4;
-      margin-bottom: 1rem;
-      font-size: 0.85rem;
-    }
+  &__tech {
+    color: #1fb5d4;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
 
-    .project-card__btn {
-      background: transparent;
-      border: 1px solid #fff;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.3s;
+  &__btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
 
-      &:hover {
-        background: #1fb5d4;
-        border-color: #1fb5d4;
-      }
+    &:hover {
+      background: #1fb5d4;
+      border-color: #1fb5d4;
     }
   }
 
   &__image {
-    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 6rem;
+    transform: translateY(-50%);
 
     h4 {
       margin-bottom: 0.5rem;
@@ -92,8 +84,20 @@
     }
 
     img {
-      max-width: 200px;
+      width: 100%;
       border-radius: 12px;
+    }
+  }
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+
+    .project-card__image {
+      left: 6rem;
+    }
+
+    .project-card__content {
+      text-align: right;
     }
   }
 }

@@ -10,10 +10,9 @@ const Projects: React.FC = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`project-card ${project.featured ? "featured" : ""}`}
+            className="project-card"
           >
             <div className="project-card__content">
-              <h4 className="project-card__label">Featured Project</h4>
               <h3 className="project-card__title">{project.title}</h3>
               <p className="project-card__desc">{project.description}</p>
               <p className="project-card__tech">
@@ -22,7 +21,6 @@ const Projects: React.FC = () => {
               <button className="project-card__btn">View Details</button>
             </div>
             <div className="project-card__image">
-              <h4>{project.subtitle}</h4>
               <img src={project.image} alt={project.title} />
             </div>
           </div>

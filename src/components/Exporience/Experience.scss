@@ -13,17 +13,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     p {
       font-size: 1.1rem;
       color: gray;
-
-      h3 {
-        font-size: 1.5rem;
-        margin: 2px 0 2px 0;
-        color: black;
-      }
     }
+  }
+
+  &-position {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2px 0 2px 0;
+    color: black;
   }
 
   &-content {

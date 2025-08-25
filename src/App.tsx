@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero'
 import Stack from './components/Stack/Stack'
 import Projects from './components/Projects/Projects'
 import SpaceBackground from './components/SpaceBackground/SpaceBackground'
+import Contacts from './components/Contacts/Contacts'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Experience />
         <Stack />
         <Projects />
+        <Contacts />
         <Footer />
       </main>
     </div>
