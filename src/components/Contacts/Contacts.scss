@@ -1,9 +1,7 @@
 .contact {
   display: flex;
   justify-content: space-between;
-  background: #121212;
   color: #fff;
-  padding: 3rem;
   gap: 3rem;
 
   &__left {
@@ -88,7 +86,7 @@
 
   &__form {
     flex: 1;
-    background: #1e1e1e;
+    background: #232b36c2;
     padding: 2rem;
     border-radius: 8px;
     border: 0.5px solid #3f3f46;
@@ -116,7 +114,7 @@
           border-radius: 8px;
           border: 0.5px solid #3f3f46;
           outline: none;
-          background: #000000;
+          background: #161b22;
           color: #d6d6d6;
           font-size: 0.95rem;
 
