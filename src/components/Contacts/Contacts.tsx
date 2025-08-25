@@ -1,94 +1,101 @@
+import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "./Contacts.scss"
+
+import CustomSelect from "../CustomSelect/CustomSelect";
+import "./Contacts.scss";
 
 function Contacts() {
   const [state, handleSubmit] = useForm('xldwrvnd');
+  const [enquiryType, setEnquiryType] = useState('');
+
   if (state.succeeded) {
-    return <p>Your message was sent!</p>;
+    return <p className='successMessage'>Your message was sent!</p>;
   }
 
   return (
-    <section className="contact">
-      <div className="contact__left">
-        <h4 className="contact__subtitle">Contact</h4>
-        <h2 className="contact__title">
+    <section className="contact" id="contact">
+      <div className="contact-left">
+        <h4 className="contact-subtitle">Contact</h4>
+        <h2 className="contact-title">
           Let’s Build Something <span>Awesome</span> – Message Me!
         </h2>
-        <p className="contact__description">
+        <p className="contact-description">
           I'd love to hear from you! Whether you have a project idea, need help
           with software development, or just want to connect and chat about
           tech, feel free to reach out.
         </p>
 
-        <div className="contact__info">
-          <div className="contact__info-item">
+        <div className="contact-info">
+          <div className="contact-info-item">
             <i className="fas fa-phone"></i>
             <a href="tel:+491786549057">+491786549057</a>
           </div>
-          <div className="contact__info-item">
+          <div className="contact-info-item">
             <i className="fas fa-envelope"></i>
             <a href="mailto:zinchenko.daryna@gmail.com">zinchenko.daryna@gmail.com</a>
           </div>
-          <div className="contact__info-item">
+          <div className="contact-info-item">
             <i className="fas fa-map-marker-alt"></i>
             <a href='https://www.google.com/maps/search/?q=Schwarzenbach am Wald'
-            target="_blank">Schwarzenbach am Wald, Germany</a>
+              target="_blank" rel="noopener noreferrer">Schwarzenbach am Wald, Germany</a>
           </div>
         </div>
 
-        <div className="contact__socials">
+        <div className="contact-socials">
           <a href="https://www.linkedin.com/in/daryna-zinchenko/"><i className="fab fa-linkedin"></i></a>
           <a href="https://github.com/darynazin"><i className="fab fa-github"></i></a>
           <a href="https://wa.me/+491786549057" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
         </div>
       </div>
 
-      <div className="contact__form">
+      <div className="contact-form">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-           <div>
-             <label htmlFor="fullName">Full Name</label>
-            <input
-              type="text"
-              name="fullName"
-              placeholder="your name"
-              required
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-           </div>
+            <div>
+              <label htmlFor="fullName">Full Name</label>
+              <input
+                type="text"
+                name="fullName"
+                placeholder="your name"
+                required
+              />
+              <ValidationError
+                prefix="Full Name"
+                field="fullName"
+                errors={state.errors}
+              />
+            </div>
             <div>
               <label htmlFor="email">Email Address</label>
               <input
-              type="email"
-              name="email"
-              placeholder="e.g. example@gmai.com"
-              required
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
+                type="email"
+                name="email"
+                placeholder="e.g. example@gmail.com"
+                required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
           </div>
 
           <div className="form-group">
             <label htmlFor="enquiryType">Enquiry Type</label>
-            <select
-              name="enquiryType"
-              required
-            >
-              <option value="">Select enquiry type</option>
-              <option value="project">Project Idea</option>
-              <option value="help">Need Help</option>
-              <option value="collab">Collaboration</option>
-              <option value="other">Other</option>
-            </select>
+            <CustomSelect
+              options={[
+                { value: "", label: "Select enquiry type" },
+                { value: "project", label: "Project Idea" },
+                { value: "help", label: "Need Help" },
+                { value: "collab", label: "Collaboration" },
+                { value: "other", label: "Other" },
+              ]}
+              placeholder="Select enquiry type"
+              onChange={(value) => setEnquiryType(value)}
+            />
+            <input type="hidden" name="enquiryType" value={enquiryType} />
             <ValidationError
               prefix="EnquiryType"
               field="enquiryType"
@@ -117,4 +124,4 @@ function Contacts() {
   );
 }
 
-export default Contacts
+export default Contacts;

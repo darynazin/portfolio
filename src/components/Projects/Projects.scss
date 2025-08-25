@@ -1,11 +1,15 @@
 .projects {
+  padding-top: 5rem;
 
   h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    color: #34d399;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
-  &__list {
+  &-list {
     display: flex;
     flex-direction: column;
   }
@@ -20,24 +24,24 @@
   gap: 2rem;
   align-items: center;
 
-  &__content {
+  &-content {
     width: 55%;
     z-index: 1;
   }
 
-  &__label {
+  &-label {
     font-size: 0.9rem;
     opacity: 0.7;
     margin-bottom: 0.5rem;
   }
 
-  &__title {
+  &-title {
     color: #1fb5d4;
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
-  &__desc {
+  &-desc {
     background: #282d32;
     padding: 1rem;
     border-radius: 8px;
@@ -46,28 +50,27 @@
     line-height: 1.5;
   }
 
-  &__tech {
+  &-tech {
     color: #1fb5d4;
     margin-bottom: 1rem;
     font-size: 0.85rem;
   }
 
-  &__btn {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+  &-btn {
+    background: #34d399;
+    color: black;
+    border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s;
 
     &:hover {
-      background: #1fb5d4;
-      border-color: #1fb5d4;
+      background: #48ffbc;
     }
   }
 
-  &__image {
+  &-image {
     width: 50%;
     position: absolute;
     top: 50%;
@@ -90,11 +93,11 @@
   &:nth-of-type(even) {
     flex-direction: row-reverse;
 
-    .project-card__image {
+    .project-card-image {
       left: 6rem;
     }
 
-    .project-card__content {
+    .project-card-content {
       text-align: right;
     }
   }

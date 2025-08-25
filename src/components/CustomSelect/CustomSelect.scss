@@ -1,0 +1,49 @@
+.custom-select {
+  position: relative;
+  width: 100%;
+  font-size: 0.9rem;
+
+  .select-selected {
+    padding: 0.9rem;
+    border-radius: 8px;
+    border: 0.5px solid #8b8b8b;
+    background: #161b22;
+    color: #8b8b8b;
+    cursor: pointer;
+  }
+
+  .select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #161b22;
+    border: 0.5px solid #3f3f46;
+    border-radius: 8px;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .select-item {
+    padding: 0.5rem;
+    color: #8b8b8b;
+    cursor: pointer;
+
+    &:hover {
+      background: #232b36;
+    }
+
+    &.selected {
+      
+      color: white;
+    }
+  }
+}
+
+.successMessage {
+  color: #34d399;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 100px;
+}

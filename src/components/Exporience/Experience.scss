@@ -1,7 +1,11 @@
 .accordion {
   &-header {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    color: #34d399;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 5rem;
   }
 
   &-item {
@@ -15,19 +19,19 @@
     align-items: center;
 
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: gray;
     }
   }
 
   &-position {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin: 2px 0 2px 0;
   }
 
   &-content {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-top: 10px;
   }
 }

@@ -1,9 +1,17 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #161b22;
+  padding: 15px 30px;
+
+  z-index: 1000;
   list-style: none;
   display: flex;
   justify-content: end;
   gap: 60px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   a {
     text-decoration: none;
     transition: text-decoration 0.3s ease;

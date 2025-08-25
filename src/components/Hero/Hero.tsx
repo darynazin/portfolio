@@ -3,7 +3,7 @@ import DarynaPhoto from "../../assets/daryna.png"
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="hero-text">
 
         <h1 className="hero-title">Hello, I'm Daryna</h1>

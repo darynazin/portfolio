@@ -4,23 +4,23 @@ import "./Projects.scss";
 
 const Projects: React.FC = () => {
   return (
-    <section className="projects">
-      <h2>✱ Things I’ve Worked on, Some of Them</h2>
-      <div className="projects__list">
+    <section className="projects" id="projects">
+      <h2>Things I’ve Worked on, Some of Them</h2>
+      <div className="projects-list">
         {projects.map((project, index) => (
           <div
             key={index}
             className="project-card"
           >
-            <div className="project-card__content">
-              <h3 className="project-card__title">{project.title}</h3>
-              <p className="project-card__desc">{project.description}</p>
-              <p className="project-card__tech">
+            <div className="project-card-content">
+              <h3 className="project-card-title">{project.title}</h3>
+              <p className="project-card-desc">{project.description}</p>
+              <p className="project-card-tech">
                 {project.tech.join(" | ")}
               </p>
-              <button className="project-card__btn">View Details</button>
+              <button className="project-card-btn">View Details</button>
             </div>
-            <div className="project-card__image">
+            <div className="project-card-image">
               <img src={project.image} alt={project.title} />
             </div>
           </div>

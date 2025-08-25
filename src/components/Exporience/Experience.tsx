@@ -6,9 +6,9 @@ function Experience() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div>
+    <div id="experience">
       <div className="accordion">
-        <h1 className="accordion-header">✱ My Experience</h1>
+        <h1 className="accordion-header">My Experience</h1>
         {experienceData.map(({ title, content }, idx) => (
           <div className="accordion-item" key={idx}>
             <div

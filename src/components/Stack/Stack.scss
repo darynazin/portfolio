@@ -1,12 +1,16 @@
 .stack {
   border-radius: 12px;
+  padding-top: 5rem;
 
-  &__title {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+  &-title {
+    color: #34d399;
+    font-size: 0.9rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
-  &__section {
+  &-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 70px;
@@ -15,20 +19,18 @@
     h2 {
       color: #aaa;
       text-transform: uppercase;
-     
-
+      font-size: 1rem;
     }
   }
 
-  &__items {
+  &-items {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 1.2rem;
-    // width: 80%;
   }
 
-  &__item {
+  &-item {
     display: flex;
     align-items: center;
     gap: 0.6rem;
