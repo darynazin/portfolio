@@ -3,20 +3,33 @@ import DarynaPhoto from "../../assets/daryna.png"
 
 function Hero() {
   return (
-    <div className="hero" id="home">
-      <div className="hero-text">
+    <>
+      <div className="hero" id="home">
+        <div className="hero-image-container">
+          <div className="hero-image">
+            <img src={DarynaPhoto} alt="Profile" />
 
-        <h1 className="hero-title">Hello, I'm Daryna</h1>
-        <p className="hero-description">
-          I'm a passionate software developer with a love for creating innovative solutions.
-          Let's build something amazing together!
-        </p>
+          </div>
+          <div className="hero-socials">
+          <a href="https://www.linkedin.com/in/daryna-zinchenko/"><i className="fab fa-linkedin"></i></a>
+          <a href="https://github.com/darynazin"><i className="fab fa-github"></i></a>
+          <a href="https://wa.me/+491786549057" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
+        </div>
+        </div>
+        <div className="hero-text">
+          <div className="hero-text-content">
+            <p className="hero-position">Web Developer</p>
+            <h1 className="hero-title">Daryna Zinchenko</h1>
+            <p className="hero-description">
+              I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
+            </p>
+            <button className="hero-btn">Download CV</button>
+          </div>
+
+        </div>
 
       </div>
-      <div className="hero-image">
-        <img src={DarynaPhoto} alt="Profile" />
-      </div>
-    </div>
+    </>
   )
 }
 
