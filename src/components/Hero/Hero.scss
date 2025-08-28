@@ -1,14 +1,16 @@
 .hero {
   display: flex;
-  height: 100vh;  
+  height: 100vh;
+   padding-right: 150px;
 
   &-text {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    width: 65%;
+    width: 60%;
     text-align: left;
+   
 
     &-content{
       width: 65%;
@@ -44,10 +46,10 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-        height: 100%;
-    width: 35%;
+    height: 100%;
+    width: 40%;
     background-color: #232b36c2;
-    padding: 5rem;
+    padding: 0 0 50px 150px;
   }
 
   &-image {

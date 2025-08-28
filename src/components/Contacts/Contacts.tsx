@@ -14,9 +14,12 @@ function Contacts() {
   }
 
   return (
-    <section className="contact" id="contact">
+    <section>
+    <h4 className="contact-subtitle">Contact</h4>
+    <div className="contact" id="contact">
+      
       <div className="contact-left">
-        <h4 className="contact-subtitle">Contact</h4>
+        
         <h2 className="contact-title">
           Let’s Build Something <span>Awesome</span> – Message Me!
         </h2>
@@ -88,7 +91,6 @@ function Contacts() {
               options={[
                 { value: "", label: "Select enquiry type" },
                 { value: "project", label: "Project Idea" },
-                { value: "help", label: "Need Help" },
                 { value: "collab", label: "Collaboration" },
                 { value: "other", label: "Other" },
               ]}
@@ -120,6 +122,7 @@ function Contacts() {
           <button type="submit" className="btn-submit" disabled={state.submitting}>Send Message</button>
         </form>
       </div>
+    </div>
     </section>
   );
 }

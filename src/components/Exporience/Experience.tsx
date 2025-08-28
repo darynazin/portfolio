@@ -6,7 +6,7 @@ function Experience() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div id="experience">
+    <section id="experience">
       <div className="accordion">
         <h1 className="accordion-header">My Experience</h1>
         {experienceData.map(({ title, content }, idx) => (
@@ -28,7 +28,7 @@ function Experience() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
