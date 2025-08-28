@@ -1,31 +1,24 @@
-import { useState } from "react";
 import './Experience.scss';
 import { experienceData } from "../../data/experience";
 
 function Experience() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
   return (
     <section id="experience">
       <div className="accordion">
         <h1 className="accordion-header">My Experience</h1>
         {experienceData.map(({ title, content }, idx) => (
-          <div className="accordion-item" key={idx}>
-            <div
-              className="accordion-title"
-              onClick={() => setActiveIndex(activeIndex === idx ? null : idx)}
-            >
-              <div>
-                <p>{title.company}</p>
-                <h3 className="accordion-position">{title.position}</h3>
-                <p>({title.duration})</p>
+          <>
+            <div className="accordion-item" key={idx}>
+              <div className="accordion-title">
+                <div>
+                  <p>{title.company}</p>
+                  <h3 className="accordion-position">{title.position}</h3>
+                  <p>({title.duration})</p>
+                </div>
               </div>
-              {activeIndex === idx ? '▼' : '▶'}
             </div>
-            {activeIndex === idx && (
-              <div className="accordion-content">{content}</div>
-            )}
-          </div>
+            <p className="accordion-content">{content}</p>
+          </>
         ))}
       </div>
     </section>
