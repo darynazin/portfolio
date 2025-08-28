@@ -6,6 +6,7 @@ import Stack from './components/Stack/Stack'
 import Projects from './components/Projects/Projects'
 import Contacts from './components/Contacts/Contacts'
 import Layout from './components/Layout/Layout'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Stack />
       <Projects />
       <Contacts />
+      <Footer />
     </Layout>
   )
 }
