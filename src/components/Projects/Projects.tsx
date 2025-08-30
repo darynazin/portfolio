@@ -2,7 +2,8 @@ import { projects } from "../../data/projects";
 import "./Projects.scss";
 
 
-const Projects: React.FC = () => {
+function Projects() {
+
   return (
     <section className="projects" id="projects">
       <h2>Things I’ve Worked on, Some of Them</h2>

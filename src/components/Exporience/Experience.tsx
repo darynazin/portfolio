@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Experience.scss";
-import hoverSound from '../../assets/sounds/hover.wav';
 import { experienceData } from "../../data/experience";
 
 function Experience() {
@@ -8,10 +7,6 @@ function Experience() {
 
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
-  };
-
-  const handleHover = () => {
-    new Audio(hoverSound).play();
   };
 
   return (
@@ -24,7 +19,7 @@ function Experience() {
               className={`accordion-item ${activeIndex === index ? "active" : ""}`}
               onClick={() => toggleAccordion(index)}
             >
-              <div onMouseEnter={handleHover} className="accordion-title">
+              <div className="accordion-title">
                 <div>
                   <p>{title.company}</p>
                   <h3 className="accordion-position">{title.position}</h3>

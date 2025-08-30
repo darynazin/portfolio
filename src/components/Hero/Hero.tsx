@@ -1,13 +1,9 @@
 import "./Hero.scss"
 import DarynaPhoto from "../../assets/images/daryna.png"
 import CV from "../../assets/documents/Daryna_Zinchenko_CV.pdf"
-import downloadSound from '../../assets/sounds/download.wav';
 import Certificate from "../../assets/documents/certificate_Daryna_Zinchenko.pdf"
 
 function Hero() {
-  const handleClick = () => {
-    new Audio(downloadSound).play();
-  };
   return (
 
     <section className="hero" id="home">
@@ -31,10 +27,10 @@ function Hero() {
           </p>
           <div className="hero-buttons">
             <a href={CV} download="Daryna_Zinchenko_CV">
-            <button onClick={handleClick} className="hero-btn cv">Download CV</button>
+            <button className="hero-btn cv">Download CV</button>
           </a>
           <a href={Certificate} download="Daryna_Zinchenko_Certificate">
-            <button onClick={handleClick} className="hero-btn certificate">Download Certificate</button>
+            <button className="hero-btn certificate">Download Certificate</button>
           </a>
           </div>
         </div>
