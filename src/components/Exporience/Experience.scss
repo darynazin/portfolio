@@ -52,7 +52,7 @@
     font-size: 1.1rem;
     padding: 0 30px;
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     border-left: 1px solid #ccccccb9;
     border-right: 1px solid #ccccccb9;
 
@@ -62,14 +62,30 @@
     transition: all 0.4s ease;
   }
 
-  &-item:hover + .accordion-content {
-    max-height: 500px; // enough to fit text
-    opacity: 1;
-    padding: 30px;
+  @media (hover: hover) and (pointer: fine) {
+    &-item:hover + .accordion-content {
+      max-height: 500px;
+      opacity: 1;
+      padding: 20px;
+    }
+
+    &-item:hover .accordion-title::after {
+      content: "–";
+      transform: rotate(180deg);
+    }
   }
 
-  &-item:hover .accordion-title::after {
-    content: "–";
-    transform: rotate(180deg);
+  @media (hover: none) and (pointer: coarse) {
+    &-item.active + .accordion-content {
+      max-height: 500px;
+      opacity: 1;
+      padding: 20px;
+    }
+
+    &-item.active .accordion-title::after {
+        content: "–";
+        transform: rotate(180deg);
+      
+    }
   }
 }

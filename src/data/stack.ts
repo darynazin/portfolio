@@ -1,83 +1,78 @@
-import javaScriptIcon from "../assets/javascript.svg";
-import typeScriptIcon from "../assets/typescript.svg";
-import reactIcon from "../assets/react.svg";
-import reduxIcon from "../assets/redux.svg";
-import tailwindIcon from "../assets/tailwind.svg";
-import sassIcon from "../assets/sass.svg";
-import htmlIcon from "../assets/html.svg";
-import cssIcon from "../assets/css3.svg";
-import bootstrapIcon from "../assets/bootstrap.svg";
-import materialUIIcon from "../assets/materialui.svg";
-import threeJsIcon from "../assets/threejs.svg";
-import daisyUIIcon from "../assets/daisyui.png";
-import nodeJsIcon from "../assets/nodejs.svg";
-import expressIcon from "../assets/express.svg";
-import mysqlIcon from "../assets/mysql.svg";
-import postgresqlIcon from "../assets/postgresql.svg";
-import mongodbIcon from "../assets/mongodb.svg";
-import gitIcon from "../assets/git.svg";
-import githubIcon from "../assets/github.svg";
-import figmaIcon from "../assets/figma.svg";
-import postmanIcon from "../assets/postman.svg";
-import viteIcon from "../assets/vite.svg";
-import webpackIcon from "../assets/webpack.svg";
-import eslintIcon from "../assets/eslint.svg";
-import jestIcon from "../assets/jest.svg";
-
-interface Tech {
-  name: string;
-  icon: string;
-}
-
-interface Section {
-  title: string;
-  items: Tech[];
-}
+import javaScriptIcon from "../assets/images/javascript.svg";
+import typeScriptIcon from "../assets/images/typescript.svg";
+import reactIcon from "../assets/images/react.svg";
+import reduxIcon from "../assets/images/redux.svg";
+import tailwindIcon from "../assets/images/tailwind.svg";
+import sassIcon from "../assets/images/sass.svg";
+import htmlIcon from "../assets/images/html.svg";
+import cssIcon from "../assets/images/css3.svg";
+import bootstrapIcon from "../assets/images/bootstrap.svg";
+import materialUIIcon from "../assets/images/materialui.svg";
+import threeJsIcon from "../assets/images/threejs.svg";
+import daisyUIIcon from "../assets/images/daisyui.png";
+import nodeJsIcon from "../assets/images/nodejs.svg";
+import expressIcon from "../assets/images/express.svg";
+import mysqlIcon from "../assets/images/mysql.svg";
+import postgresqlIcon from "../assets/images/postgresql.svg";
+import mongodbIcon from "../assets/images/mongodb.svg";
+import gitIcon from "../assets/images/git.svg";
+import githubIcon from "../assets/images/github.svg";
+import figmaIcon from "../assets/images/figma.svg";
+import postmanIcon from "../assets/images/postman.svg";
+import viteIcon from "../assets/images/vite.svg";
+import webpackIcon from "../assets/images/webpack.svg";
+import eslintIcon from "../assets/images/eslint.svg";
+import jestIcon from "../assets/images/jest.svg";
+import type { Section } from "../types/stack";
 
 export const stack: Section[] = [
   {
+    index: 0,
     title: "Frontend",
     items: [
-      { name: "JavaScript", icon: javaScriptIcon },
-      { name: "TypeScript", icon: typeScriptIcon },
-      { name: "React", icon: reactIcon },
-      { name: "Redux", icon: reduxIcon },
-      { name: "Tailwind", icon: tailwindIcon },
-      { name: "Sass", icon: sassIcon },
-      { name: "HTML", icon: htmlIcon },
-      { name: "CSS", icon: cssIcon },
-      { name: "Bootstrap", icon: bootstrapIcon },
-      { name: "Material UI", icon: materialUIIcon },
-      { name: "Three.js", icon: threeJsIcon },
-      { name: "DaisyUI", icon: daisyUIIcon },
+      { idx: 0, name: "JavaScript", icon: javaScriptIcon },
+      { idx: 1, name: "TypeScript", icon: typeScriptIcon },
+      { idx: 2, name: "React", icon: reactIcon },
+      { idx: 3, name: "Redux", icon: reduxIcon },
+      { idx: 4, name: "Tailwind", icon: tailwindIcon },
+      { idx: 5, name: "Sass", icon: sassIcon },
+      { idx: 6, name: "HTML", icon: htmlIcon },
+      { idx: 7, name: "CSS", icon: cssIcon },
+      { idx: 8, name: "Bootstrap", icon: bootstrapIcon },
+      { idx: 9, name: "Material UI", icon: materialUIIcon },
+      { idx: 10, name: "Three.js", icon: threeJsIcon },
+      { idx: 11, name: "DaisyUI", icon: daisyUIIcon },
     ],
   },
   {
+    index: 1,
     title: "Backend",
     items: [
-      { name: "Node.Js", icon: nodeJsIcon },
-      { name: "Express.Js", icon: expressIcon },
+      { idx: 0, name: "Node.Js", icon: nodeJsIcon },
+      { idx: 1, name: "Express.Js", icon: expressIcon },
     ],
   },
   {
+    index: 2,
     title: "Database",
     items: [
-      { name: "MySQL", icon: mysqlIcon },
-      { name: "PostgreSQL", icon: postgresqlIcon },
-      { name: "MongoDB", icon: mongodbIcon },
+      { idx: 0, name: "MySQL", icon: mysqlIcon },
+      { idx: 1, name: "PostgreSQL", icon: postgresqlIcon },
+      { idx: 2, name: "MongoDB", icon: mongodbIcon },
     ],
   },
   {
+    index: 3,
     title: "Tools",
     items: [
-      { name: "Git", icon: gitIcon },
-      { name: "GitHub", icon: githubIcon },
-      { name: "Figma", icon: figmaIcon },
-      { name: "Postman", icon: postmanIcon },
-      { name: "Vite", icon: viteIcon },
-      { name: "Webpack", icon: webpackIcon },
-      { name: "ESLint", icon: eslintIcon },
-      { name: "Jest", icon: jestIcon },
+      { idx: 0, name: "Git", icon: gitIcon },
+      { idx: 1, name: "GitHub", icon: githubIcon },
+      { idx: 2, name: "Figma", icon: figmaIcon },
+      { idx: 3, name: "Postman", icon: postmanIcon },
+      { idx: 4, name: "Vite", icon: viteIcon },
+      { idx: 5, name: "Webpack", icon: webpackIcon },
+      { idx: 6, name: "ESLint", icon: eslintIcon },
+      { idx: 7, name: "Jest", icon: jestIcon },
     ],
   },
 ];

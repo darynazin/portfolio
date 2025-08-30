@@ -1,5 +1,8 @@
-export const experienceData = [
+import type { ExperienceItem } from "../types/experience";
+
+export const experienceData: ExperienceItem[] = [
     {
+      index: 0,
       title: {
         company: 'Company Name',
         position: 'Position Title',
@@ -11,6 +14,7 @@ export const experienceData = [
       voluptatem.`
     },
     {
+      index: 1,
       title: {
         company: 'Company Name',
         position: 'Position Title',
@@ -24,6 +28,7 @@ export const experienceData = [
       Repudiandae, mollitia id reprehenderit a ab odit!`
     },
     {
+      index: 2,
       title: {
         company: 'Company Name',
         position: 'Position Title',

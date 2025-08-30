@@ -1,17 +1,9 @@
-import projectImage from "../assets/project1.png";
-
-export type ProjectProps = {
-  title: string;
-  subtitle: string;
-  description: string;
-  tech: string[];
-  featured?: boolean;
-  image: string;
-  link: string;
-};
+import projectImage from "../assets/images/project1.png";
+import type { ProjectProps } from "../types/projects";
 
 export const projects: ProjectProps[] = [
   {
+    index: 0,
     title: "X-Dividend Mobile App",
     subtitle: "Stock Market App",
     description:
@@ -22,6 +14,7 @@ export const projects: ProjectProps[] = [
     link: "#"
   },
   {
+    index: 1,
     title: "Interect Family Chat App",
     subtitle: "Interact - Family App",
     description:

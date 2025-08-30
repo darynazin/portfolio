@@ -1,7 +1,13 @@
 import "./Hero.scss"
-import DarynaPhoto from "../../assets/daryna.png"
+import DarynaPhoto from "../../assets/images/daryna.png"
+import CV from "../../assets/documents/Daryna_Zinchenko_CV.pdf"
+import downloadSound from '../../assets/sounds/download.wav';
+import Certificate from "../../assets/documents/certificate_Daryna_Zinchenko.pdf"
 
 function Hero() {
+  const handleClick = () => {
+    new Audio(downloadSound).play();
+  };
   return (
 
     <section className="hero" id="home">
@@ -23,7 +29,14 @@ function Hero() {
           <p className="hero-description">
             I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
           </p>
-          <button className="hero-btn">Download CV</button>
+          <div className="hero-buttons">
+            <a href={CV} download="Daryna_Zinchenko_CV">
+            <button onClick={handleClick} className="hero-btn cv">Download CV</button>
+          </a>
+          <a href={Certificate} download="Daryna_Zinchenko_Certificate">
+            <button onClick={handleClick} className="hero-btn certificate">Download Certificate</button>
+          </a>
+          </div>
         </div>
 
       </div>

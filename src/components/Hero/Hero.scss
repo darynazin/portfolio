@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   height: 100vh;
-   padding-right: 150px;
+  padding-right: 150px;
 
   &-text {
     display: flex;
@@ -10,9 +10,8 @@
     justify-content: center;
     width: 60%;
     text-align: left;
-   
 
-    &-content{
+    &-content {
       width: 65%;
     }
   }
@@ -74,19 +73,40 @@
     color: #aaa;
   }
 
+  &-buttons {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+
   &-btn {
-    background: #34d399;
-    color: black;
-    border: none;
+    background: transparent;
+    color: #34d399;
+    border: 3px solid #34d399;
     padding: 0.6rem 1.2rem;
-    border-radius: 6px;
+    border-radius: 36px;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
 
-    &:hover {
-      background: #48ffbc;
+    &.cv:hover {
+      background: white;
+      color: black;
+      border-color: white;
+    }
+
+    &.certificate {
+      background: #34d399;
+      color: black;
+      border-color: #34d399;
+
+      &:hover {
+        background: white;
+        color: white;
+        border-color: white;
+        background-color: transparent;
+      }
     }
   }
 }

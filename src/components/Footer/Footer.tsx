@@ -47,12 +47,7 @@ function Footer() {
             </div>
 
             <div className="privacy-section">
-              <h2>4. Cookies and Analytics</h2>
-              <p>I may use cookies and similar technologies to collect non-personal information such as website traffic patterns. This helps me improve user experience. No personal data is linked to analytics data.</p>
-            </div>
-
-            <div className="privacy-section">
-              <h2>5. Changes to this Privacy Policy</h2>
+              <h2>4. Changes to this Privacy Policy</h2>
               <p>I may update this Privacy Policy from time to time. The updated version will be posted on this page with the “Effective Date” updated.</p>
             </div>
           </div>

@@ -1,9 +1,14 @@
 import { useEffect, useState, useRef } from "react"
+import clickSound from '../../assets/sounds/click.wav';
 import "./Header.scss"
 
 function Header() {
   const [scrolled, setScrolled] = useState(false)
   const topRef = useRef(null)
+
+  const handleClick = () => {
+    new Audio(clickSound).play();
+  };
 
   useEffect(() => {
     const options = {
@@ -29,10 +34,10 @@ function Header() {
 
       <nav >
         <ul className={scrolled ? "navbar scrolled" : "navbar"}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li onClick={handleClick}><a href="#home">Home</a></li>
+          <li onClick={handleClick}><a href="#experience">Experience</a></li>
+          <li onClick={handleClick}><a href="#projects">Projects</a></li>
+          <li onClick={handleClick}><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </>
