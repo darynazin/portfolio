@@ -1,0 +1,25 @@
+@use 'typography';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mont-Regular', Arial;
+  color: white;
+}
+
+html, body, #root {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+ 
+p {
+  font-size: 16px;
+}
+
+h1 {
+   font-family: 'Mont-Bold', Arial;
+}
+
+h2 {
+  font-family: 'Mont-SemiBold', Arial;
+}

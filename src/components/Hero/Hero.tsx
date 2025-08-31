@@ -30,7 +30,7 @@ function Hero() {
             <button className="hero-btn cv">Download CV</button>
           </a>
           <a href={Certificate} download="Daryna_Zinchenko_Certificate">
-            <button className="hero-btn certificate">Download Certificate</button>
+            <button className="hero-btn certificate">Download Docs</button>
           </a>
           </div>
         </div>

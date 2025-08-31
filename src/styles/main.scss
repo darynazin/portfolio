@@ -1,0 +1,21 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+@use "./base/reset" as *;
+@use "./base/typography" as *;
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-width: 576px;
+}
+
+.main-container section:not(:first-of-type) {
+    padding: 100px 300px;
+
+    @include respond-to(xl) {
+    padding: 50px 100px;
+
+  }
+}

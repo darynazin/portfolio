@@ -1,4 +1,4 @@
-import './App.css'
+import "./styles/main.scss";
 import Experience from './components/Exporience/Experience'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
