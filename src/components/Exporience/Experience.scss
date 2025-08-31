@@ -1,7 +1,15 @@
+@use "../../styles/abstracts/mixins" as *;
+@use "../../styles/abstracts/variables" as *;
+
 .accordion {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  min-width: 400px;
+
+  @include respond-to(lg) {
+    min-width: 0;
+  }
 
   &-header {
     color: #34d399;

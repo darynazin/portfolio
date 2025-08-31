@@ -4,7 +4,7 @@ import { stack } from "../../data/stack";
 const Stack: React.FC = () => {
   return (
     <section className="stack">
-      <h4 className="stack-title">My Stack</h4>
+      <h1 className="stack-title">My Stack</h1>
       {stack.map((section) => (
         <div key={section.index} className="stack-section">
           <h2>{section.title}</h2>

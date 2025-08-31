@@ -36,6 +36,10 @@
         width: 60%;
       }
 
+      @include respond-to(sm) {
+        width: 85%;
+      }
+
       
     }
   }
