@@ -54,7 +54,7 @@ function Contacts() {
 
         <div className="contact-form">
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="form-group name-email">
               <div>
                 <label htmlFor="fullName">Full Name</label>
                 <input

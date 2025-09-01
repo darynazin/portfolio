@@ -24,15 +24,17 @@
 }
 
 .project-card {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  gap: 2rem;
-  width: 100%;
-
   &-content {
     position: relative;
     width: 40%;
+
+    @include respond-to(lg) {
+      width: 100%;
+    }
+
+    @include respond-to(xl) {
+      width: 100%;
+    }
   }
 
   &-image {
@@ -40,6 +42,10 @@
     object-fit: contain;
     display: block;
     object-fit: contain;
+
+    @include respond-to(lg) {
+      width: 100%;
+    }
   }
 
   @include respond-to(lg) {
@@ -60,7 +66,7 @@
     margin-bottom: 0.5rem;
 
     @include respond-to(lg) {
-      margin-bottom: 0;
+      margin: 1rem 0 0;
     }
   }
 
@@ -75,22 +81,34 @@
     font-size: 1rem;
     line-height: 1.5;
 
+    @include respond-to(xl) {
+      width: 220%;
+    }
+
     @include respond-to(lg) {
+      position: static;
+      transform: translate(0);
       padding: 0;
-      margin: 0;
-      background: transparent;
+      width: 100%;
+      font-size: 0.9rem;
     }
   }
 
   &-desc {
     padding: 1rem;
+    width: 100%;
     background-color: #282d32;
+
+    @include respond-to(lg) {
+      padding: 0;
+      background: transparent;
+    }
   }
 
   &-tech {
     color: #1fb5d4;
-    margin: 1rem 0;
     font-size: 0.85rem;
+    margin: 0.5rem 0;
 
     @include respond-to(lg) {
       margin-bottom: 0.5rem;
@@ -130,8 +148,16 @@
     display: flex;
     width: 100%;
 
+    @include respond-to(lg) {
+      flex-direction: column-reverse;
+    }
+
     &:nth-of-type(even) {
       flex-direction: row-reverse;
+
+      @include respond-to(lg) {
+        flex-direction: column-reverse;
+      }
 
       .project-card-info {
         position: absolute;
@@ -142,8 +168,9 @@
         text-align: right;
 
         @include respond-to(lg) {
+          position: static;
           text-align: left;
-          width: 170%;
+          transform: translate(0);
         }
       }
     }
