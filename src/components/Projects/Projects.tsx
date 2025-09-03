@@ -14,13 +14,15 @@ function Projects() {
           >
             <div className="project-card-content">
               <div className="project-card-info">
-                <h3 className="project-card-title">{project.title}</h3>
+                <div className="project-card-text">
+                  <h3 className="project-card-title">{project.title}</h3>
                 <p className="project-card-desc">
                   {project.description}
                 </p>
                 <p className="project-card-tech">
                   {project.tech.join(" | ")}
                 </p>
+                </div>
                 <button className="project-card-btn">View Details</button>
 
               </div>

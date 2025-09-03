@@ -17,7 +17,7 @@
     flex-direction: column;
     gap: 6rem;
 
-    @include respond-to(lg) {
+    @include respond-to(md) {
       gap: 4rem;
     }
   }
@@ -27,12 +27,10 @@
   &-content {
     position: relative;
     width: 40%;
-
     @include respond-to(lg) {
-      width: 100%;
+      width: 20%;
     }
-
-    @include respond-to(xl) {
+    @include respond-to(md) {
       width: 100%;
     }
   }
@@ -42,16 +40,29 @@
     object-fit: contain;
     display: block;
     object-fit: contain;
-
     @include respond-to(lg) {
+      width: 70%;
+    }
+
+    @include respond-to(md) {
       width: 100%;
     }
   }
 
-  @include respond-to(lg) {
+  @include respond-to(md) {
     flex-direction: column-reverse;
     height: auto;
     gap: 0.5rem;
+  }
+
+  &-text {
+      padding: 0.5rem;
+      background-color: #282d32;
+
+    @include respond-to(md) {
+      padding: 0.7rem 0;
+      background: transparent;
+    }
   }
 
   &-label {
@@ -63,11 +74,6 @@
   &-title {
     color: #1fb5d4;
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-
-    @include respond-to(lg) {
-      margin: 1rem 0 0;
-    }
   }
 
   &-info {
@@ -76,16 +82,16 @@
     left: 0;
     transform: translateY(-50%);
     width: 150%;
-    padding: 1rem;
+
     border-radius: 8px;
     font-size: 1rem;
     line-height: 1.5;
 
-    @include respond-to(xl) {
-      width: 220%;
+    @include respond-to(lg) {
+      width: 350%;
     }
 
-    @include respond-to(lg) {
+    @include respond-to(md) {
       position: static;
       transform: translate(0);
       padding: 0;
@@ -95,11 +101,15 @@
   }
 
   &-desc {
-    padding: 1rem;
     width: 100%;
     background-color: #282d32;
+    
 
     @include respond-to(lg) {
+      font-size: 0.9rem;
+    }
+
+    @include respond-to(md) {
       padding: 0;
       background: transparent;
     }
@@ -108,19 +118,20 @@
   &-tech {
     color: #1fb5d4;
     font-size: 0.85rem;
-    margin: 0.5rem 0;
 
-    @include respond-to(lg) {
+    @include respond-to(md) {
       margin-bottom: 0.5rem;
     }
   }
 
   &-btn {
     background: #34d399;
-    font-size: 1.1rem;
+    font-family: 'Mont-SemiBold', Arial;
+    font-size: 1rem;
     color: black;
     border: none;
-    padding: 0.6rem 1.2rem;
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.6rem;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s;
@@ -130,7 +141,7 @@
     }
   }
 
-  @include respond-to(lg) {
+  @include respond-to(md) {
     width: 100%;
     right: 0;
     top: 0;
@@ -147,15 +158,16 @@
   &-container {
     display: flex;
     width: 100%;
+    justify-content: space-between;
 
-    @include respond-to(lg) {
+    @include respond-to(md) {
       flex-direction: column-reverse;
     }
 
     &:nth-of-type(even) {
       flex-direction: row-reverse;
 
-      @include respond-to(lg) {
+      @include respond-to(md) {
         flex-direction: column-reverse;
       }
 
@@ -167,7 +179,7 @@
         transform: translateY(-50%);
         text-align: right;
 
-        @include respond-to(lg) {
+        @include respond-to(md) {
           position: static;
           text-align: left;
           transform: translate(0);
