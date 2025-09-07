@@ -28,9 +28,10 @@ function Header() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          {menuOpen ?
+            <i className="fa-solid fa-xmark"></i> :
+            <i className="fa-solid fa-bars"></i>
+          }
         </button>
 
         <ul className={`navbar ${menuOpen ? "active" : ""}`}>

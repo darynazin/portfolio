@@ -5,14 +5,11 @@ import Certificate from "../../assets/documents/certificate_Daryna_Zinchenko.pdf
 
 function Hero() {
   return (
-
     <section id="home" className="hero-container">
-      <div className="hero-left"></div>
       <div className="hero">
         <div className="hero-image-container">
           <div className="hero-image">
             <img src={DarynaPhoto} alt="Profile" />
-
           </div>
           <div className="hero-socials">
             <a href="https://www.linkedin.com/in/daryna-zinchenko/"><i className="fab fa-linkedin"></i></a>
@@ -36,12 +33,9 @@ function Hero() {
               </a>
             </div>
           </div>
-
         </div>
       </div>
-      <div className="hero-right"></div>
     </section>
-
   )
 }
 

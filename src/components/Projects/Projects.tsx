@@ -4,7 +4,8 @@ import "./Projects.scss";
 
 function Projects() {
   return (
-    <section className="projects" id="projects">
+    <section className="section-wrapper">
+      <div className="projects section" id="projects">
       <h1 className="projects-title">Things I’ve Worked on, Some of Them</h1>
       <div className="projects-list">
         {projects.map((project) => (
@@ -31,6 +32,7 @@ function Projects() {
           </div>
         ))}
       </div>
+    </div>
     </section>
   );
 };

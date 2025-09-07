@@ -10,7 +10,8 @@ function Experience() {
   };
 
   return (
-    <section id="experience">
+    <section className="section-wrapper">
+      <div id="experience" className="section">
       <div className="accordion">
         <h1 className="accordion-header">My Experience</h1>
         {experienceData.map(({ index, title, content }) => (
@@ -37,6 +38,7 @@ function Experience() {
           </div>
         ))}
       </div>
+    </div>
     </section>
   );
 }

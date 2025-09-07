@@ -14,7 +14,8 @@ function Contacts() {
   }
 
   return (
-    <section>
+    <section className="section-wrapper">
+      <div className="section">
       <h4 className="contact-subtitle">Contact</h4>
       <div className="contact" id="contact">
 
@@ -134,6 +135,7 @@ function Contacts() {
           </form>
         </div>
       </div>
+    </div>
     </section>
   );
 }

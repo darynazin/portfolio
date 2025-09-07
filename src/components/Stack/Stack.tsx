@@ -3,7 +3,8 @@ import { stack } from "../../data/stack";
 
 const Stack: React.FC = () => {
   return (
-    <section className="stack">
+    <section className="section-wrapper">
+      <div className="stack section">
       <h1 className="stack-title">My Stack</h1>
       {stack.map((section) => (
         <div key={section.index} className="stack-section">
@@ -18,6 +19,7 @@ const Stack: React.FC = () => {
           </div>
         </div>
       ))}
+    </div>
     </section>
   );
 };

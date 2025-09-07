@@ -3,16 +3,15 @@
 
 .hero {
   display: flex;
-  justify-content: space-between;
   height: 100vh;
-  max-width: 1140px;
-  margin: 0 auto;
+  width: 100%;
 
   @include respond-to(lg) {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 0;
+    padding-top: 40px;
+    height: auto;
     gap: 1rem;
   }
 
@@ -23,21 +22,24 @@
     justify-content: center;
     width: 60%;
     text-align: left;
+    padding-right: 40px;
 
     @include respond-to(lg) {
       align-items: center;
       text-align: center;
       width: 100%;
+      padding: 0 20px;
     }
+
+    
 
     &-content {
       width: 70%;
+      max-width: 690px;
 
       @include respond-to(sm) {
         width: 100%;
       }
-
-      
     }
   }
 
@@ -45,11 +47,12 @@
     display: flex;
     gap: 1rem;
     width: 100%;
+    max-width: 450px;
     padding-bottom: 2rem;
 
     @include respond-to(lg) {
-        width: fit-content;
-      }
+      width: fit-content;
+    }
 
     i {
       font-size: 2rem;
@@ -78,7 +81,7 @@
 
     @include respond-to(lg) {
       text-align: justify;
-         font-size: 16px;
+      font-size: 16px;
     }
   }
 
@@ -86,20 +89,26 @@
     position: relative;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     height: 100%;
     width: 40%;
     background-color: #232b36c2;
+    padding-left: 40px;
 
     @include respond-to(lg) {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-        padding-top: 110px;
-        gap: 1rem;
-      }
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      background-color: transparent;
+      padding-top: 110px;
+      gap: 1rem;
+    }
+
+    @include respond-to(sm) {
+      padding: 40px 20px 0 20px;
+    }
   }
 
   &-image {
@@ -110,12 +119,12 @@
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%);
-    
+
     @include respond-to(lg) {
-        position: static;
-        transform: none;
-        width: 30%;
-      }
+      position: static;
+      transform: none;
+      width: 30%;
+    }
 
     img {
       width: 100%;
@@ -151,10 +160,7 @@
     }
 
     @include respond-to(lg) {
-   
       justify-content: center;
-
-    
     }
   }
 
@@ -199,7 +205,8 @@
   width: 100%;
 }
 
-.hero-left, .hero-right {
+.hero-left,
+.hero-right {
   flex-grow: 1;
   min-width: 50px;
   height: 100vh;
