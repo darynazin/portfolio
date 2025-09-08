@@ -1,11 +1,24 @@
+@use "../../styles/abstracts/mixins" as *;
+@use "../../styles/abstracts/variables" as *;
+
 .main-container {
-  min-height: 100%;
-  background: radial-gradient(
-      circle 550px at var(--x, 50%) var(--y, 50%),
-      rgba(255, 255, 255, 0.122),
-      transparent 80%
-    ),
-    #161b22; 
-    background-attachment: fixed;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #161b22;
+  min-width: 430px;
+}
+
+.main-container > .section-wrapper {
+  margin: 0 auto;
+  padding: 0 40px;
+
+  .section {
+    max-width: 1140px;
+  }
+
+  @include respond-to(md) {
+    padding: 0 20px;
+  }
 }

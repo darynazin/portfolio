@@ -13,9 +13,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 40px 20px ;
+    padding: 40px;
     height: auto;
     gap: 1rem;
+  }
+
+  @include respond-to(md) {
+    padding: 20px;
   }
 
   &-text {
@@ -33,8 +37,6 @@
       width: 100%;
       padding: 0;
     }
-
-    
 
     &-content {
       width: 70%;
@@ -201,14 +203,9 @@
 .hero-container {
   display: flex;
   width: 100%;
-  background: linear-gradient(
-    to right,
-    #232b36 50%,
-    #161b22 50%
-  );
+  background: linear-gradient(to right, #232b36 50%, #161b22 50%);
 
   @include respond-to(lg) {
     background: #161b22;
-  
   }
 }

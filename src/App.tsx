@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer'
 function App() {
 
   return (
-      <Layout>
+    <Layout>
       <Header />
       <Hero />
       <Experience />
