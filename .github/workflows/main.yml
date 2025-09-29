@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
   id-token: write
@@ -13,21 +14,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
+      - run: npm run build
 
-      - name: Build React app
-        run: npm run build
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: build
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
