@@ -6,5 +6,6 @@ export type ProjectProps = {
   tech: string[];
   featured?: boolean;
   image: string;
-  link: string;
+  demo: string;
+  github: string;
 };

@@ -126,12 +126,12 @@
 
   &-btn {
     background: #34d399;
-    font-family: 'Mont-SemiBold', Arial;
+    font-family: 'Mont-SemiBold', Arial, serif;
     font-size: 1rem;
     color: black;
     border: none;
     padding: 0.6rem 0.8rem;
-    margin-top: 0.6rem;
+    text-decoration: none;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s;

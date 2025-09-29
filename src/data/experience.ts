@@ -4,38 +4,22 @@ export const experienceData: ExperienceItem[] = [
     {
       index: 0,
       title: {
-        company: 'Company Name',
-        position: 'Position Title',
-        duration: 'Duration'
+        company: 'Savoi GmbH',
+        position: 'SEO Specialist',
+        duration: '06/2021 - 08/2022'
       },
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-      laborum cupiditate possimus labore, hic temporibus velit dicta earum
-      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-      voluptatem.`
+      content: `Website auditing and creating an improvement plans, writing specifications 
+      for copywriting. Developed analytical skills and proficiency with web tools.`
     },
     {
       index: 1,
       title: {
-        company: 'Company Name',
-        position: 'Position Title',
-        duration: 'Duration'
+        company: 'Freelance',
+        position: 'Web Developer',
+        duration: '12/2024 – Present'
       },
-      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-      quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-      quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-      Repudiandae, mollitia id reprehenderit a ab odit!`
-    },
-    {
-      index: 2,
-      title: {
-        company: 'Company Name',
-        position: 'Position Title',
-        duration: 'Duration'
-      },
-      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
+      content: `Provided backend and web development services for various clients, focusing on React, Node.js, MongoDB, and API integration. 
+      Delivered custom solutions, bug fixes, and consultation for web projects. 
+      Managed client requirements, deadlines, and provided ongoing technical support.`
     }
   ];

@@ -4,14 +4,16 @@ import type { ProjectProps } from "../types/projects";
 export const projects: ProjectProps[] = [
   {
     index: 0,
-    title: "X-Dividend Mobile App",
+    title: "AI Powered Patient Reservation App For Pets",
     subtitle: "Stock Market App",
     description:
-      "The app offers comprehensive data on companies, including categories of Most Actives, Gainers and Losers Stock Market. Users can sort the information by sector, name, highest or lowest price, dividend date, and ex-dividend date. This data is updated in real-time, ensuring that users always have access to the most current information.",
-    tech: ["React Native", "Hybrid Mobile App", "Android", "iOS"],
+      "Web application that helps pet owners with instant first aid guidance, AI-powered emergency support, " +
+        "and seamless vet appointment booking.",
+    tech: ["Vite", "React", "Tailwind", "DaisyUl", "Axios", "Formik", "Yup", "Google Maps", "Netlify"],
     featured: true,
     image: projectImage,
-    link: "#"
+    demo: "https://vetigo.netlify.app/",
+    github: "https://petfirstaid.netlify.app/"
   },
   {
     index: 1,
@@ -22,6 +24,7 @@ export const projects: ProjectProps[] = [
     tech: ["React Native", "Hybrid Mobile App", "Android", "iOS"],
     featured: true,
     image: projectImage,
-    link: "#"
+    demo: "https://petfirstaid.netlify.app/",
+    github: "https://petfirstaid.netlify.app/"
   }
 ];

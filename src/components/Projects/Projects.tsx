@@ -24,8 +24,12 @@ function Projects() {
                   {project.tech.join(" | ")}
                 </p>
                 </div>
-                <button className="project-card-btn">View Details</button>
-
+                <a href={project.demo}
+                   target="_blank"
+                   className="project-card-btn">Demo</a>
+                <a href={project.github}
+                   target="_blank"
+                   className="project-card-btn">Code</a>
               </div>
             </div>
             <img className="project-card-image" src={project.image} alt={project.title} />
