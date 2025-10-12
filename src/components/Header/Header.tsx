@@ -34,12 +34,14 @@ function Header() {
           }
         </button>
 
-        <ul className={`navbar ${menuOpen ? "active" : ""}`}>
+        <div className="nav-wrapper">
+          <ul className={`navbar ${menuOpen ? "active" : ""}`}>
           <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
           <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
           <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
+        </div>
       </nav>
     </>
   )

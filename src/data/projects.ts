@@ -17,16 +17,6 @@ export const projects: ProjectProps[] = [
     github: "https://github.com/darynazin/Pets_app_frontend"
   },
   {
-    index: 1,
-    title: "E-commerce platform for gadget sales",
-    description:
-      "Interact is a revolutionary mobile app designed to help families connect with other families and promote social interaction. With Interact, families can easily find and connect with other families in their local area, create events, and chat with family partners. The app uses geolocation features to show other families within a specific radius, making it easy to find and connect with like-minded families nearby.",
-    tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
-    image: bose,
-    demo: "https://fe-oct22-wonder-devs.github.io/product_catalog/",
-    github: "https://petfirstaid.netlify.app/"
-  },
-  {
     index: 2,
     title: "Landing Page",
     description:
@@ -36,5 +26,15 @@ export const projects: ProjectProps[] = [
     image: gadgets,
     demo: "https://daryna-z.github.io/BOSE-landing/",
     github: "https://github.com/daryna-z/BOSE-landing"
+  },
+  {
+    index: 1,
+    title: "E-commerce platform for gadget sales",
+    description:
+      "Interact is a revolutionary mobile app designed to help families connect with other families and promote social interaction. With Interact, families can easily find and connect with other families in their local area, create events, and chat with family partners. The app uses geolocation features to show other families within a specific radius, making it easy to find and connect with like-minded families nearby.",
+    tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
+    image: bose,
+    demo: "https://fe-oct22-wonder-devs.github.io/product_catalog/",
+    github: "https://petfirstaid.netlify.app/"
   }
 ];

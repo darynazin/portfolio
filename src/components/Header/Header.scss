@@ -10,13 +10,21 @@
   padding: 20px 40px;
   z-index: 1000;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 
   @include respond-to(lg) {
     padding: 20px 40px;
   }
 }
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 
 .scrolled {
   background-color: #161b22f4;
