@@ -20,7 +20,7 @@ function Hero() {
           <div className="hero-text-content">
             <h1 className="hero-title">Daryna Zinchenko</h1>
             <p className="hero-description">
-              I am a motivated and skilled web developer passionate about creating accessible, high-quality, and user-friendly solutions. I strive for clean code and efficient results, and ready to contribute my knowledge and skills to developing innovative projects.</p>
+              I am a motivated and skilled developer with a passion for creating high-quality, user-friendly products. I focus on writing clean, efficient code and delivering practical solutions. Hold a degree in computer science.</p>
             <div className="hero-buttons">
               <a href={CV} download="Daryna_Zinchenko_CV">
                 <button className="hero-btn cv">Download CV</button>

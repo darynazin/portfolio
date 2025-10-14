@@ -82,7 +82,7 @@
   &-description {
     font-size: 1.2rem;
     text-align: left;
-    color: #aaa;
+    // color: #aaa;
 
     @include respond-to(lg) {
       text-align: justify;
@@ -137,7 +137,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0.7rem 0 1rem 0;
-    color: #aaa;
+    // color: #aaa;
 
     @include respond-to(xl) {
       font-size: 2rem;
