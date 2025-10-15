@@ -7,34 +7,32 @@ import type { ProjectProps } from "../types/projects";
 export const projects: ProjectProps[] = [
   {
     index: 0,
-    title: "AI Powered Patient Reservation App For Pets",
+    title: "VetiGo",
     description:
-      "Web application that helps pet owners with instant first aid guidance, AI-powered emergency support, " +
+      "AI powered patient reservation app for pet owners that helps them with instant first aid guidance, AI-powered emergency support, " +
         "and seamless vet appointment booking.",
     tech: ["Vite", "React", "Tailwind", "DaisyUl", "Axios", "Formik", "Yup", "Google Maps", "Netlify"],
     image: vet,
     demo: "https://vetigo.netlify.app/",
-    github: "https://github.com/darynazin/Pets_app_frontend"
-  },
-  {
-    index: 2,
-    title: "Landing Page",
-    description:
-        "A fully responsive landing page.\n" +
-        "The design and layout are inspired by the official BOSE website.",
-    tech: ["SCSS", "HTML", "BEM"],
-    image: gadgets,
-    demo: "https://daryna-z.github.io/BOSE-landing/",
-    github: "https://github.com/daryna-z/BOSE-landing"
+    github: "https://github.com/darynazin/VetiGo/blob/main/README.md"
   },
   {
     index: 1,
-    title: "E-commerce platform for gadget sales",
-    description:
-      "Interact is a revolutionary mobile app designed to help families connect with other families and promote social interaction. With Interact, families can easily find and connect with other families in their local area, create events, and chat with family partners. The app uses geolocation features to show other families within a specific radius, making it easy to find and connect with like-minded families nearby.",
+    title: "Nice Gadgets",
+    description: "An e-commerce platform for gadget sales featuring a responsive design, product catalog, advanced filtering and sorting options, detailed product pages, favorites management, and a shopping cart. ",
     tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
-    image: bose,
+    image: gadgets,
     demo: "https://fe-oct22-wonder-devs.github.io/product_catalog/",
     github: "https://petfirstaid.netlify.app/"
+  },
+  {
+    index: 2,
+    title: "Bose",
+    description:
+        "A fully responsive and visually engaging landing page, thoughtfully designed with a modern layout and aesthetic elements inspired by the official BOSE website to reflect a clean, premium brand experience.",
+    tech: ["SCSS", "HTML", "BEM"],
+    image: bose,
+    demo: "https://daryna-z.github.io/BOSE-landing/",
+    github: "https://github.com/daryna-z/BOSE-landing"
   }
 ];

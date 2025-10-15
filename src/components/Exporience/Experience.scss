@@ -25,6 +25,11 @@
     border: 1px  solid #ccccccb9;
     border-radius: 55px;
     cursor: pointer;
+    margin: 0 auto;
+
+    @include respond-to(xl) {
+      width: 80%;
+    }
 
     &:hover {
       background: #1f2731;

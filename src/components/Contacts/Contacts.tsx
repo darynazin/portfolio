@@ -16,18 +16,16 @@ function Contacts() {
   return (
     <section className="section-wrapper">
       <div className="section">
-      <h4 className="contact-subtitle">Contact</h4>
+      <h1 className="contact-subtitle">Contact</h1>
       <div className="contact" id="contact">
 
         <div className="contact-left">
 
           <h2 className="contact-title">
-            Let’s Build Something <span>Awesome</span> – Message Me!
+             <span>Get in touch</span> – Message Me!
           </h2>
           <p className="contact-description">
-            I'd love to hear from you! Whether you have a project idea, need help
-            with software development, or just want to connect and chat about
-            tech, feel free to reach out.
+            I’m open to new opportunities - big or small, creative or challenging. Feel free to reach out anytime! Whether you have a question or just want to connect, I’ll make sure to get back to you.
           </p>
 
           <div className="contact-info">

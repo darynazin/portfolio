@@ -22,7 +22,7 @@ function Header() {
     <>
       <div ref={topRef} style={{ height: "1px" }} />
 
-      <nav className={scrolled ? "nav-container scrolled" : "nav-container"}>
+      <nav className={`nav-container${scrolled ? ' scrolled' : ''}`}>
         <button
           className={`burger ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
