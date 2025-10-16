@@ -186,31 +186,46 @@
       }
     }
   }
-}
-@media (max-width: 900px) {
-  .contact {
-    flex-direction: column;
-  }
 
-  .contact-form {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .form-group:first-child {
-    flex-direction: column;
-  }
-}
-
-.contact-info-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-
-  i {
+  &-success-message {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
     color: #34d399;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+
+    i {
+      color: #34d399;
+    }
+  }
+}
+
+.message {
+  &-title {
+    color: white;
+  }
+
+  &-icon {
+    color: #34d399;
+  }
+
+  &-confirm {
+    background-color: #34d399;
+    color: black;
+
+    &:hover {
+      background-color: #48ffbc;
+      color: black;
+    }
   }
 }
