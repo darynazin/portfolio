@@ -63,7 +63,7 @@ function Projects() {
               </div>
               <img
                 className="project-card-image"
-                src={project.image}
+                src={project.image[0]}
                 alt={project.title}
               />
             </div>

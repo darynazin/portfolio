@@ -1,6 +1,18 @@
-import vet from "../assets/images/vet.png";
-import bose from "../assets/images/bose.png";
-import gadgets from "../assets/images/gadgets.png";
+import vet1 from "../assets/images/vetiGo1.png";
+import vet2 from "../assets/images/vetiGo2.png";
+import vet3 from "../assets/images/vetiGo3.png";
+
+
+
+import bose1 from "../assets/images/bose1.png";
+import bose2 from "../assets/images/bose2.png";
+import bose3 from "../assets/images/bose3.png";
+
+
+
+import gadgets1 from "../assets/images/niceGadgets1.png";
+import gadgets2 from "../assets/images/niceGadgets2.png";
+import gadgets3 from "../assets/images/niceGadgets3.png";
 
 import type { ProjectProps } from "../types/projects";
 
@@ -12,7 +24,7 @@ export const projects: ProjectProps[] = [
       "AI powered patient reservation app for pet owners that helps them with instant first aid guidance, AI-powered emergency support, " +
         "and seamless vet appointment booking.",
     tech: ["Vite", "React", "Tailwind", "DaisyUl", "Axios", "Formik", "Yup", "Google Maps", "Netlify"],
-    image: vet,
+    image: [vet1, vet2, vet3],
     demo: "https://vetigo.netlify.app/",
     github: "https://github.com/darynazin/VetiGo/blob/main/README.md"
   },
@@ -21,7 +33,7 @@ export const projects: ProjectProps[] = [
     title: "Nice Gadgets",
     description: "An e-commerce platform for gadget sales featuring a responsive design, product catalog, advanced filtering and sorting options, detailed product pages, favorites management, and a shopping cart. ",
     tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
-    image: gadgets,
+    image: [gadgets1, gadgets2, gadgets3],
     demo: "https://fe-oct22-wonder-devs.github.io/product_catalog/",
     github: "https://petfirstaid.netlify.app/"
   },
@@ -31,7 +43,7 @@ export const projects: ProjectProps[] = [
     description:
         "A fully responsive and visually engaging landing page, thoughtfully designed with a modern layout and aesthetic elements inspired by the official BOSE website to reflect a clean, premium brand experience.",
     tech: ["SCSS", "HTML", "BEM"],
-    image: bose,
+    image: [bose1, bose2, bose3],
     demo: "https://daryna-z.github.io/BOSE-landing/",
     github: "https://github.com/daryna-z/BOSE-landing"
   }

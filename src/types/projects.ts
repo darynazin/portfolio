@@ -3,7 +3,7 @@ export type ProjectProps = {
   title: string;
   description: string;
   tech: string[];
-  image: string;
+  image: string[];
   demo: string;
   github: string;
 };
