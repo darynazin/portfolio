@@ -21,8 +21,10 @@ export const projects: ProjectProps[] = [
     index: 0,
     title: "VetiGo",
     description:
-      "AI powered patient reservation app for pet owners that helps them with instant first aid guidance, AI-powered emergency support, " +
-        "and seamless vet appointment booking.",
+      "AI-powered patient reservation app for pet owners that helps them with first-aid guidance, AI-powered emergency support, and vet appointment booking. " +
+  "For a full demo experience, you can use the following test account:\n" +
+  "email: test@gmail.com\n" +
+  "password: 12345678",
     tech: ["Vite", "React", "Tailwind", "DaisyUl", "Axios", "Formik", "Yup", "Google Maps", "Netlify"],
     image: [vet1, vet2, vet3],
     demo: "https://vetigo.netlify.app/",

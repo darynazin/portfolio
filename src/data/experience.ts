@@ -34,7 +34,7 @@ export const experienceData: ExperienceItem[] = [
         duration: '06/2021 - 08/2022'
       },
         content: 
-          `Website auditing and creating an improvement plans, writing specifications 
-          for copywriting. Developed analytical skills and proficiency with web tools.`
+          `Conducted website audits and created improvement plans, as well as writing specifications for copywriting. 
+          Developed analytical skills and proficiency with web tools.`
     }
   ];
