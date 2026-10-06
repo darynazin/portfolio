@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { projects } from "../../data/projects";
 import "./Projects.scss";
+// import Cascade from "../Cascade/Cascade";
 
 function Projects() {
   const [visible, setVisible] = useState(false);
@@ -66,6 +67,10 @@ function Projects() {
                 src={project.image[0]}
                 alt={project.title}
               />
+
+              {/* <div className="project-card-image">
+                <Cascade images={project.image} />
+              </div> */}
             </div>
           ))}
         </div>

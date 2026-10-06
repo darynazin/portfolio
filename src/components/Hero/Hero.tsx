@@ -20,7 +20,8 @@ function Hero() {
           <div className="hero-text-content">
             <h1 className="hero-title">Daryna Zinchenko</h1>
             <p className="hero-description">
-              I am a motivated and skilled developer with a passion for creating high-quality, user-friendly products. I focus on writing clean, efficient code and delivering practical solutions. Hold a degree in computer science.</p>
+              Full Stack Developer with 1+ year of professional experience building and maintaining web applications. Experienced with React, TypeScript, Node.js, Express.js, REST APIs, MongoDB and PostgreSQL. Comfortable working across frontend and backend development, implementing responsive interfaces, integrating APIs, and developing maintainable application features. Strong focus on clean code, problem solving, and effective collaboration within development teams.
+            </p>
             <div className="hero-buttons">
               <a href={CV} download="Daryna_Zinchenko_CV">
                 <button className="hero-btn cv">Download CV</button>
