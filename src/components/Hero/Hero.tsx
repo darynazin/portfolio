@@ -20,7 +20,7 @@ function Hero() {
           <div className="hero-text-content">
             <h1 className="hero-title">Daryna Zinchenko</h1>
             <p className="hero-description">
-              Full Stack Developer with 1+ year of professional experience building and maintaining web applications. Experienced with React, TypeScript, Node.js, Express.js, REST APIs, MongoDB and PostgreSQL. Comfortable working across frontend and backend development, implementing responsive interfaces, integrating APIs, and developing maintainable application features. Strong focus on clean code, problem solving, and effective collaboration within development teams.
+              Full Stack Developer with 1+ year of professional experience building and maintaining web applications. Experienced with React, TypeScript, Node.js, Express.js, REST APIs, MongoDB and PostgreSQL. Strong focus on clean code, problem solving, and effective collaboration within development teams.
             </p>
             <div className="hero-buttons">
               <a href={CV} download="Daryna_Zinchenko_CV">

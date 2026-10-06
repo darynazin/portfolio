@@ -7,7 +7,7 @@
 
   &-title {
     color: #34d399;
-    font-size: 2rem;
+    font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 4rem;
@@ -74,7 +74,7 @@
 
   &-title {
     color: #1fb5d4;
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   &-info {
@@ -83,7 +83,7 @@
     left: 0;
     transform: translateY(-50%);
     width: 130%;
-    font-size: 1rem;
+    font-size: 19px;
     line-height: 1.5;
     opacity: 0;
 
@@ -111,7 +111,7 @@
       transform: translate(0);
       padding: 0;
       width: 100%;
-      font-size: 0.9rem;
+      font-size: 16px;
     }
   }
 
@@ -127,7 +127,7 @@
     color: #d2d2d2;
 
     @include respond-to(lg) {
-      font-size: 0.9rem;
+      font-size: 16px;
     }
 
     @include respond-to(md) {
@@ -139,7 +139,7 @@
   &-tech {
     padding-top: 0.5rem;
     color: #1fb5d4;
-    font-size: 0.8rem;
+    font-size: 16px;
 
     span {
       color: #1fb5d4;
@@ -159,7 +159,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 0.8rem;
+    font-size: 16px;
     margin-right: 1rem;
     text-decoration: none;
 
@@ -196,7 +196,7 @@
 
   h4 {
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 16px;
     color: #fff;
     opacity: 0.9;
   }

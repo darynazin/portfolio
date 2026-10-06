@@ -60,7 +60,7 @@
     }
 
     i {
-      font-size: 2rem;
+      font-size: 32px;
       color: #aaa;
       transition: 0.3s;
 
@@ -76,11 +76,11 @@
 
   &-position {
     color: #aaa;
-    font-size: 1.2rem;
+    font-size: 19px;
   }
 
   &-description {
-    font-size: 1.2rem;
+    font-size: 19px;
     text-align: left;
     // color: #aaa;
 
@@ -134,13 +134,13 @@
   }
 
   &-title {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 40px;
+    // font-weight: bold;
     margin: 0.7rem 0 1rem 0;
     // color: #aaa;
 
     @include respond-to(xl) {
-      font-size: 2rem;
+      font-size: 32px;
     }
   }
 
@@ -168,11 +168,11 @@
     background: transparent;
     color: #34d399;
     border: 3px solid #34d399;
-    padding: 15px;
+    padding: 8px 15px;
     border-radius: 36px;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 1rem;
+    font-size: 16px;
     margin-top: 1rem;
 
     @include respond-to(lg) {

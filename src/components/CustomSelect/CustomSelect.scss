@@ -1,7 +1,7 @@
 .custom-select {
   position: relative;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 16px;
 
   .select-selected {
     padding: 0.9rem;
@@ -35,7 +35,6 @@
     }
 
     &.selected {
-      
       color: white;
     }
   }
@@ -43,7 +42,7 @@
 
 .successMessage {
   color: #34d399;
-  font-size: 1.2rem;
+  font-size: 19px;
   text-align: center;
   margin-bottom: 100px;
 }

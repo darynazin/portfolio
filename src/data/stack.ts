@@ -23,6 +23,9 @@ import viteIcon from "../assets/images/vite.svg";
 import webpackIcon from "../assets/images/webpack.svg";
 import eslintIcon from "../assets/images/eslint.svg";
 import jestIcon from "../assets/images/jest.svg";
+import hubSpotIcon from "../assets/images/hubspot.png";
+import hubDBIcon from "../assets/images/hubspot.png";
+import powerAutomateIcon from "../assets/images/powerautomate.png";
 import type { Section } from "../types/stack";
 
 export const stack: Section[] = [
@@ -73,6 +76,16 @@ export const stack: Section[] = [
       { idx: 5, name: "Webpack", icon: webpackIcon },
       { idx: 6, name: "ESLint", icon: eslintIcon },
       { idx: 7, name: "Jest", icon: jestIcon },
+    ],
+  },
+  {
+    index: 4,
+    title: "CMS & Platforms",
+    items: [
+      { idx: 0, name: "HubSpot", icon: hubSpotIcon },
+      { idx: 1, name: "HubDB", icon: hubDBIcon },
+      { idx: 2, name: "Power Automate", icon: powerAutomateIcon },
+      
     ],
   },
 ];
