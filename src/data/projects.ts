@@ -37,7 +37,7 @@ export const projects: ProjectProps[] = [
     tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
     image: [gadgets1, gadgets2, gadgets3],
     demo: "https://fe-oct22-wonder-devs.github.io/product_catalog/",
-    github: "https://petfirstaid.netlify.app/"
+    github: "https://github.com/orgs/fe-oct22-wonder-devs/repositories"
   },
   {
     index: 2,
