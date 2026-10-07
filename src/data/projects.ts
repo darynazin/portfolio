@@ -36,7 +36,7 @@ export const projects: ProjectProps[] = [
     description: "An e-commerce platform for gadget sales featuring a responsive design, product catalog, advanced filtering and sorting options, detailed product pages, favorites management, and a shopping cart. ",
     tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
     image: [gadgets1, gadgets2, gadgets3],
-    demo: "https://fe-oct22-wonder-devs.github.io/product_catalog/",
+    demo: "https://daryna-z.github.io/product_catalog",
     github: "https://github.com/orgs/fe-oct22-wonder-devs/repositories"
   },
   {
