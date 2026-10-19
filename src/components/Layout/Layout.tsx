@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import type { PropsWithChildren } from "react";
+import { Outlet } from "react-router-dom";
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 import "./Layout.scss";
 
-type LayoutProps = {};
-
-export default function Layout({ children }: PropsWithChildren<LayoutProps>) {
+export default function Layout() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -26,7 +26,9 @@ export default function Layout({ children }: PropsWithChildren<LayoutProps>) {
         } as React.CSSProperties
       }
     >
-      {children}
+      <Header />
+      <Outlet />
+      <Footer />
     </main>
   );
 }

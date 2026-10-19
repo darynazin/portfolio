@@ -5,7 +5,7 @@ export const experienceData: ExperienceItem[] = [
       index: 2,
       title: {
         company: 'Lichtline GmbH',
-        position: 'Web Developer',
+        position: 'Full-Stack Engineer',
         duration: '11/2025 – Present'
       },
         content: 
@@ -18,7 +18,7 @@ export const experienceData: ExperienceItem[] = [
       index: 1,
       title: {
         company: 'Freelance',
-        position: 'Web Developer',
+        position: 'Full-Stack Engineer',
         duration: '12/2024 – 11/2025'
       },
         content: 

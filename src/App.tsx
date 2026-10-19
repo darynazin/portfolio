@@ -1,26 +1,16 @@
-import "./styles/main.scss";
-import Experience from './components/Exporience/Experience'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import Stack from './components/Stack/Stack'
-import Projects from './components/Projects/Projects'
-import Contacts from './components/Contacts/Contacts'
-import Layout from './components/Layout/Layout'
-import Footer from './components/Footer/Footer'
+
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home";
 
 function App() {
-
   return (
-    <Layout>
-      <Header />
-      <Hero />
-      <Experience />
-      <Stack />
-      <Projects />
-      <Contacts />
-      <Footer />
-    </Layout>
-  )
+    <Routes>
+      <Route path="/portfolio" element={<Layout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
