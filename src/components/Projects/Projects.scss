@@ -206,6 +206,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    cursor: pointer;
 
     @include respond-to(md) {
       flex-direction: column-reverse;

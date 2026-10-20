@@ -1,11 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { projects } from "../../data/projects";
+import { useNavigate } from "react-router-dom";
 import "./Projects.scss";
-// import Cascade from "../Cascade/Cascade";
 
 function Projects() {
   const [visible, setVisible] = useState(false);
   const projectsListRef = useRef(null);
+  const navigate = useNavigate();
+
+  function goToProject(slug: string) {
+    navigate(`/portfolio/projects/${slug}`);
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,7 +35,7 @@ function Projects() {
         <h1 className="projects-title">Things I’ve Worked on</h1>
         <div className="projects-list" ref={projectsListRef}>
           {projects.map((project) => (
-            <div key={project.index} className="project-card-container">
+            <div key={project.index} className="project-card-container" onClick={() => goToProject(project.title.toLowerCase().replace(/\s+/g, "-"))}>
               <div className="project-card-content">
                 <div
                   className={`project-card-info ${visible ? "visible" : ""}`}
@@ -48,6 +53,7 @@ function Projects() {
                         href={project.demo}
                         target="_blank"
                         className="project-card-btn"
+                        onClick={(event) => event.stopPropagation()}
                       >
                         Demo
                       </a>
@@ -55,6 +61,7 @@ function Projects() {
                         href={project.github}
                         target="_blank"
                         className="project-card-btn btn2"
+                        onClick={(event) => event.stopPropagation()}
                       >
                         Code
                       </a>
@@ -67,10 +74,6 @@ function Projects() {
                 src={project.image[0]}
                 alt={project.title}
               />
-
-              {/* <div className="project-card-image">
-                <Cascade images={project.image} />
-              </div> */}
             </div>
           ))}
         </div>

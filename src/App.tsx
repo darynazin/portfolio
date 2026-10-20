@@ -1,13 +1,15 @@
 
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
+import Project from "./pages/Project/Project";
 
 function App() {
   return (
     <Routes>
       <Route path="/portfolio" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="projects/:slug" element={<Project />} />
       </Route>
     </Routes>
   );
