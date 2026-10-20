@@ -37,13 +37,8 @@
     padding: 0.5rem;
     border-radius: 5px;
     gap: 0.4rem;
-    cursor: pointer;
     background-color: #ffffff10;
-
-    &:hover {
-      transform: scale(1.2);
-      transition: transform 0.3s ease;
-    }
+    cursor: default;
 
     img {
       width: 28px;

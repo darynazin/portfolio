@@ -24,10 +24,11 @@ function Header() {
   }, [])
 
   return (
-    <>
+    <header>
       <div ref={topRef} style={{ height: "1px" }} />
 
       <nav className={`nav-container${scrolled ? ' scrolled' : ''}`}>
+        {isHome && (
         <button
           className={`burger ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -38,9 +39,14 @@ function Header() {
             <i className="fa-solid fa-bars"></i>
           }
         </button>
+        )}
+        {isProject && (
+          <Link to="/portfolio/" className="burger back-link">Home
+          </Link>
+        )}
 
-        {(isHome || isProject) && (
-          <div className="nav-wrapper">
+      
+          <div className={`nav-wrapper${isProject ? " nav-wrapper--project" : ""}`}>
             <ul className={`navbar ${menuOpen ? "active" : ""}`}>
               {isHome && (
                 <>
@@ -55,9 +61,9 @@ function Header() {
               )}
             </ul>
           </div>
-        )}
+      
       </nav>
-    </>
+    </header>
   )
 }
 

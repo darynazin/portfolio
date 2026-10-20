@@ -11,11 +11,14 @@
 }
 
 .main-container > .section-wrapper {
+  width: 100%;
   margin: 0 auto;
   padding: 0 40px;
 
   .section {
     max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   @include respond-to(md) {

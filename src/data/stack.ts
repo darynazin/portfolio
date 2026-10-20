@@ -26,6 +26,10 @@ import jestIcon from "../assets/images/jest.svg";
 import hubSpotIcon from "../assets/images/hubspot.png";
 import hubDBIcon from "../assets/images/hubspot.png";
 import powerAutomateIcon from "../assets/images/powerautomate.png";
+import axiosIcon from "../assets/images/axios.svg";
+import formikIcon from "../assets/images/formik.png";
+import netlifyIcon from "../assets/images/netlify.svg";
+import mongooseIcon from "../assets/images/mongoose.png";
 import type { Section } from "../types/stack";
 
 export const stack: Section[] = [
@@ -89,3 +93,39 @@ export const stack: Section[] = [
     ],
   },
 ];
+
+
+export {
+  javaScriptIcon, 
+  typeScriptIcon, 
+  reactIcon, 
+  reduxIcon, 
+  tailwindIcon, 
+  sassIcon, 
+  htmlIcon, 
+  cssIcon, 
+  bootstrapIcon, 
+  materialUIIcon, 
+  threeJsIcon, 
+  daisyUIIcon, 
+  nodeJsIcon, 
+  expressIcon, 
+  mysqlIcon, 
+  postgresqlIcon, 
+  mongodbIcon, 
+  gitIcon, 
+  githubIcon, 
+  figmaIcon, 
+  postmanIcon, 
+  viteIcon, 
+  webpackIcon, 
+  eslintIcon, 
+  jestIcon, 
+  hubSpotIcon, 
+  hubDBIcon, 
+  powerAutomateIcon,
+  axiosIcon,
+  formikIcon,
+  netlifyIcon,
+  mongooseIcon,
+};
