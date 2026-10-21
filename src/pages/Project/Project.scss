@@ -19,7 +19,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     transition: color 180ms ease;
 
@@ -79,9 +79,7 @@
   }
 
   &__gallery {
-    margin-bottom: 76px;
-    // width: 800px;
-    // margin: 0 auto 76px;
+    margin: 50px 0;
 
     .gallery {
       max-width: none;
@@ -99,12 +97,13 @@
   &__overview {
     display: grid;
     grid-template-columns: minmax(0, 1.6fr) minmax(230px, 0.8fr);
-    gap: clamp(36px, 8vw, 100px);
     padding-bottom: 76px;
   }
 
   &__intro {
-    max-width: 650px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 
     p {
       margin: 0;
@@ -125,13 +124,13 @@
     span {
       display: block;
       margin-bottom: 7px;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 500;
     }
 
     p {
       margin: 0;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 1.8;
       overflow-wrap: anywhere;
     }
@@ -157,11 +156,7 @@
     gap: 14px;
   }
 
-  &__feature {
-    display: grid;
-    grid-template-columns: 42px minmax(0, 1fr);
-    gap: 18px;
-    align-items: start;
+  &__feature { 
     padding: 26px;
     border: 1px solid var(--project-border);
     border-radius: 12px;
@@ -178,7 +173,7 @@
 
     p {
       margin: 0;
-      font-size: 13px;
+      font-size: 16px;
       line-height: 1.8;
       overflow-wrap: anywhere;
     }
@@ -204,7 +199,7 @@
 
     h3 {
       margin: 0 0 5px;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 600;
       letter-spacing: -0.015em;
     }
@@ -227,7 +222,7 @@
     display: grid;
     min-height: 70vh;
     place-content: center;
-    justify-items: start;
+    justify-items: center;
     gap: 12px;
 
     p {

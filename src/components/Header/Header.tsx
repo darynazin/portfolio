@@ -57,7 +57,7 @@ function Header() {
                 </>
               )}
               {isProject && (
-                <li><Link to="/portfolio/" onClick={() => setMenuOpen(false)}>Back to Home</Link></li>
+                <li><Link to="/portfolio/" onClick={() => setMenuOpen(false)}>← Back to Home</Link></li>
               )}
             </ul>
           </div>
