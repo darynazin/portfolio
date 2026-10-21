@@ -66,6 +66,7 @@ export const stack: Section[] = [
       { idx: 0, name: "MySQL", icon: mysqlIcon },
       { idx: 1, name: "PostgreSQL", icon: postgresqlIcon },
       { idx: 2, name: "MongoDB", icon: mongodbIcon },
+      { idx: 3, name: "Mongoose", icon: mongooseIcon }
     ],
   },
   {

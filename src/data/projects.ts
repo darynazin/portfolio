@@ -24,8 +24,18 @@ export const projects: ProjectProps[] = [
   {
     index: 0,
     title: "VetiGo Reservation App",
-    description:
-      "AI-powered patient reservation app for pet owners that helps them with first-aid guidance, AI-powered emergency support, and vet appointment booking. ",
+    description: "AI-powered patient reservation app for pet owners that helps them with first-aid guidance, AI-powered emergency support, and vet appointment booking. ",
+    fullDescription: 
+      {
+        desc: "A web application that helps pet owners with instant first aid guidance, AI-powered emergency support, and seamless vet appointment booking.",
+        frontend: "Built using Vite, React, HTML, Tailwind CSS, DaisyUI, Axios, Formik, Yup, Google Maps MarkerClusterer. Deployed on Netlify.",
+        backend: "Backend: Built using Node.js, Express, REST APIs, MongoDB (Mongoose), Firebase, OpenAI, Multer, JWT, BcryptJS. Deployed on Render."
+      }
+    ,
+    features: [
+      {frontend: ["User authentication. User tokens are stored in cookies.","Role-based access. Pet Owners and Veterinarians, each with tailored functionalities.","Pets management for Pet Owners. Creating, updating, storing, and deleting details about pets.","Appointments management. Creating, updating, deleting, and filtering appointments.","AI-powered emergency support. Instant first aid guidance.", "Find Nearby Veterinarians. Google Maps MarkerClusterer integration for locating veterinarians on an interactive map."]},
+      {backend: ["JWT-based authentication. BcryptJS password hashing, session check and auth middleware.","User Upload Management: Secure file handling using Multer & Firebase.","OpenAI Chat Completions API."]}
+    ],
     tech: ["HTML, Css,JavaScript", "Vite", "React", "MongoDB", "Mongoose", "Tailwind", "DaisyUl", "Axios", "Formik", "Yup", "Google Maps", "Netlify"],
     icons: [[htmlIcon, "HTML"], [cssIcon, "CSS"], [javaScriptIcon, "JavaScript"], [viteIcon, "Vite"], [reactIcon, "React"], [mongodbIcon, "MongoDB"], [mongooseIcon, "Mongoose"], [tailwindIcon, "Tailwind"], [daisyUIIcon, "DaisyUI"], [axiosIcon, "Axios"], [formikIcon, "Formik"], [netlifyIcon, "Netlify"]],
     image: [vet1, vet2, vet3, vetMockup],
@@ -36,6 +46,16 @@ export const projects: ProjectProps[] = [
     index: 1,
     title: "Nice Gadgets Store",
     description: "An e-commerce platform for gadget sales featuring a responsive design, product catalog, advanced filtering and sorting options, detailed product pages, favorites management, and a shopping cart. ",
+    fullDescription: 
+      {
+        desc: "E-commerce platform for gadget sales",
+        frontend: "Built using Webpack, React, Redux, HTML, and SCSS.",
+        backend: "Built using Node.js, TypeScript, deployed on Render"
+      }
+    ,
+    features: [
+      {frontend: [ "Product catalog with filtering and sorting."]} 
+    ],
     tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
     icons: [[reactIcon, "React"], [nodeJsIcon, "Node.js"], [typeScriptIcon, "TypeScript"], [reduxIcon, "Redux"], [htmlIcon, "HTML"]],
     image: [gadgets1, gadgets2, gadgets3, gadgetsMockup],
@@ -45,8 +65,17 @@ export const projects: ProjectProps[] = [
   {
     index: 2,
     title: "Bose Landing Page",
-    description:
-        "A fully responsive and visually engaging landing page, thoughtfully designed with a modern layout and aesthetic elements inspired by the official BOSE website to reflect a clean, premium brand experience.",
+    description:"A fully responsive and visually engaging landing page, thoughtfully designed with a modern layout and aesthetic elements inspired by the official BOSE website to reflect a clean, premium brand experience.",
+    fullDescription: 
+      {
+        desc: "A fully responsive and visually engaging landing page, thoughtfully designed with a modern layout and aesthetic elements inspired by the official BOSE website to reflect a clean, premium brand experience.",
+        frontend: "Built using SCSS, HTML, and BEM. Deployed on GitHub Pages.",
+      }
+    ,
+    features: [
+      {frontend: ["User authentication. User tokens are stored in cookies.","Role-based access. Pet Owners and Veterinarians, each with tailored functionalities.","Pets management for Pet Owners. Creating, updating, storing, and deleting details about pets.","Appointments management. Creating, updating, deleting, and filtering appointments.","AI-powered emergency support. Instant first aid guidance.", "Find Nearby Veterinarians. Google Maps MarkerClusterer integration for locating veterinarians on an interactive map."]},
+      {backend: ["JWT-based authentication. BcryptJS password hashing, session check and auth middleware.","User Upload Management: Secure file handling using Multer & Firebase.","OpenAI Chat Completions API."]}
+    ],
     tech: ["SCSS", "HTML", "BEM"],
     icons: [[sassIcon, "SCSS"], [htmlIcon, "HTML"], [cssIcon, "CSS"]],
     image: [bose1, bose2, bose3, boseMockup],

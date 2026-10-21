@@ -21,21 +21,35 @@ function Project() {
           <ProjectStack icons={project.icons} />
         </header>
 
-        <Swiper
-          images={[
-            project.image[0],
-            project.image[1],
-            project.image[2]
-          ]}
-        />
-        <div className="project__content">
-          <h2>Technologies Used</h2>
-          <ul className="project__technologies">
-            {project.tech.map((technology) => (
-              <li key={technology}>{technology}</li>
-            ))}
-          </ul>
+        <div className="project__description">
+          <Swiper
+            images={[
+              project.image[0],
+              project.image[1],
+              project.image[2]
+            ]}
+          />
+          <div className="project__content">
+            <p>{project.fullDescription.desc}</p>
+            <p><strong>Frontend:</strong> {project.fullDescription.frontend}</p>
+            <p><strong>Backend:</strong> {project.fullDescription.backend}</p>
+            <div className="project__links">
+            </div>
+          </div>
         </div>
+         <div className="project__content">
+            <h2>Features</h2>
+            {project.features.map((feature, index) => (
+              <div key={index}>
+                {feature.frontend && (
+                  <p><strong>Frontend:</strong> {feature.frontend.join(", ")}</p>
+                )}
+                {feature.backend && (
+                  <p><strong>Backend:</strong> {feature.backend.join(", ")}</p>
+                )}
+              </div>
+            ))}
+          </div>
       </div>
     </div>
   );
