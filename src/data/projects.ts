@@ -1,6 +1,9 @@
 import vet1 from "../assets/images/vetiGo1.png";
 import vet2 from "../assets/images/vetiGo2.png";
 import vet3 from "../assets/images/vetiGo3.png";
+import vet4 from "../assets/images/vetiGo4.png";
+import vet5 from "../assets/images/vetiGo5.png";
+import vet6 from "../assets/images/vetiGo6.png";
 import vetMockup from "../assets/images/vetigo_mokup.png";
 
 
@@ -38,7 +41,8 @@ export const projects: ProjectProps[] = [
     ],
     tech: ["HTML, Css,JavaScript", "Vite", "React", "MongoDB", "Mongoose", "Tailwind", "DaisyUl", "Axios", "Formik", "Yup", "Google Maps", "Netlify"],
     icons: [[htmlIcon, "HTML"], [cssIcon, "CSS"], [javaScriptIcon, "JavaScript"], [viteIcon, "Vite"], [reactIcon, "React"], [mongodbIcon, "MongoDB"], [mongooseIcon, "Mongoose"], [tailwindIcon, "Tailwind"], [daisyUIIcon, "DaisyUI"], [axiosIcon, "Axios"], [formikIcon, "Formik"], [netlifyIcon, "Netlify"]],
-    image: [vet1, vet2, vet3, vetMockup],
+    image: [vet1, vet4, vet2, vet3, vet5, vet6],
+    mockup: vetMockup,
     demo: "https://vetigo.netlify.app/",
     github: "https://github.com/darynazin/VetiGo/blob/main/README.md"
   },
@@ -48,17 +52,18 @@ export const projects: ProjectProps[] = [
     description: "An e-commerce platform for gadget sales featuring a responsive design, product catalog, advanced filtering and sorting options, detailed product pages, favorites management, and a shopping cart. ",
     fullDescription: 
       {
-        desc: "E-commerce platform for gadget sales",
+        desc: "An e-commerce platform for gadget sales featuring a responsive design, product catalog, advanced filtering and sorting options, detailed product pages, favorites management, and a shopping cart. ",
         frontend: "Built using Webpack, React, Redux, HTML, and SCSS.",
         backend: "Built using Node.js, TypeScript, deployed on Render"
       }
     ,
     features: [
-      {frontend: [ "Product catalog with filtering and sorting."]} 
+      {frontend: [ "Product catalog with filtering, sorting, favorites, and shopping cart functionality."]} 
     ],
     tech: ["React", "Node.js", "TypeScript", "Redux", "HTML"],
     icons: [[reactIcon, "React"], [nodeJsIcon, "Node.js"], [typeScriptIcon, "TypeScript"], [reduxIcon, "Redux"], [htmlIcon, "HTML"]],
-    image: [gadgets1, gadgets2, gadgets3, gadgetsMockup],
+    image: [gadgets1, gadgets2, gadgets3],
+    mockup: gadgetsMockup,
     demo: "https://daryna-z.github.io/product_catalog",
     github: "https://github.com/orgs/fe-oct22-wonder-devs/repositories"
   },
@@ -72,13 +77,11 @@ export const projects: ProjectProps[] = [
         frontend: "Built using SCSS, HTML, and BEM. Deployed on GitHub Pages.",
       }
     ,
-    features: [
-      {frontend: ["User authentication. User tokens are stored in cookies.","Role-based access. Pet Owners and Veterinarians, each with tailored functionalities.","Pets management for Pet Owners. Creating, updating, storing, and deleting details about pets.","Appointments management. Creating, updating, deleting, and filtering appointments.","AI-powered emergency support. Instant first aid guidance.", "Find Nearby Veterinarians. Google Maps MarkerClusterer integration for locating veterinarians on an interactive map."]},
-      {backend: ["JWT-based authentication. BcryptJS password hashing, session check and auth middleware.","User Upload Management: Secure file handling using Multer & Firebase.","OpenAI Chat Completions API."]}
-    ],
+    features: [],
     tech: ["SCSS", "HTML", "BEM"],
     icons: [[sassIcon, "SCSS"], [htmlIcon, "HTML"], [cssIcon, "CSS"]],
-    image: [bose1, bose2, bose3, boseMockup],
+    image: [bose1, bose2, bose3],
+    mockup: boseMockup,
     demo: "https://daryna-z.github.io/BOSE-landing/",
     github: "https://github.com/daryna-z/BOSE-landing"
   }

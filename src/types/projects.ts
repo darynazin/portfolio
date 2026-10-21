@@ -14,6 +14,7 @@ export type ProjectProps = {
   tech: string[];
   icons: string[][];
   image: string[];
+  mockup: string;
   demo: string;
   github: string;
 };

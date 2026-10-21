@@ -71,7 +71,7 @@ function Projects() {
               </div>
               <img
                 className="project-card-image"
-                src={project.image[3]}
+                src={project.mockup}
                 alt={project.title}
               />
             </div>
