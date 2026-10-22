@@ -14,26 +14,12 @@ import boseMockup from "../assets/images/bose_mokup.png";
 import gadgets1 from "../assets/images/niceGadgets1.png";
 import gadgets2 from "../assets/images/niceGadgets2.png";
 import gadgets3 from "../assets/images/niceGadgets3.png";
+import gadgets4 from "../assets/images/niceGadgets4.png";
 import gadgetsMockup from "../assets/images/gadgets_mokup.png";
 
-import {
-  javaScriptIcon,
-  typeScriptIcon,
-  reactIcon,
-  reduxIcon,
-  tailwindIcon,
-  axiosIcon,
-  netlifyIcon,
-  sassIcon,
-  htmlIcon,
-  cssIcon,
-  daisyUIIcon,
-  nodeJsIcon,
-  viteIcon,
-  formikIcon,
-  mongodbIcon,
-  mongooseIcon,
-} from "./stack";
+import tool1 from "../assets/images/webTool.png";
+
+import { javaScriptIcon, typeScriptIcon, reactIcon, reduxIcon, tailwindIcon, axiosIcon, netlifyIcon, sassIcon, htmlIcon, cssIcon, daisyUIIcon, nodeJsIcon, viteIcon, formikIcon, mongodbIcon, mongooseIcon } from "./stack";
 
 import type { ProjectProps } from "../types/projects";
 
@@ -122,7 +108,7 @@ export const projects: ProjectProps[] = [
       frontend:
         "Developed with React, Redux, HTML, and SCSS, using Webpack for bundling. Implemented reusable interface components and centralized state management to support product browsing, favorites, and shopping cart interactions. Deployed on GitHub Pages.",
       backend:
-        "Developed with Node.js and TypeScript, deployed on Render.",
+        "Developed with Node.js and TypeScript, deployed on Railway.",
     },
     features: [
       {
@@ -133,6 +119,15 @@ export const projects: ProjectProps[] = [
           "Shopping Cart: Add products to the cart and manage selected items.",
           "State Management: Use Redux to coordinate application state across interactive shopping features.",
           "Responsive Design: Provide a consistent browsing experience across different screen sizes.",
+        ],
+        backend: [
+          "Developed a RESTful API for an online electronics store featuring phones and tablets.",
+          "Implemented endpoints to retrieve product collections and detailed product information by ID.",
+          "Added product sorting by price, newest arrivals, and alphabetical order.",
+          "Implemented pagination with configurable page numbers and page sizes.",
+          "Created endpoints to retrieve products with the biggest discounts.",
+          "Added endpoints to retrieve the total number of phones and tablets.",
+          "Designed consistent API routes to support dynamic product listings, product detail pages, and discounted product sections."
         ],
       },
     ],
@@ -145,7 +140,7 @@ export const projects: ProjectProps[] = [
       "SCSS",
       "Webpack",
       "GitHub Pages",
-      "Render",
+      "Railway",
     ],
     icons: [
       [reactIcon, "React"],
@@ -154,7 +149,7 @@ export const projects: ProjectProps[] = [
       [reduxIcon, "Redux"],
       [htmlIcon, "HTML"],
     ],
-    image: [gadgets1, gadgets2, gadgets3],
+    image: [gadgets1, gadgets2, gadgets3, gadgets4],
     mockup: gadgetsMockup,
     demo: "https://daryna-z.github.io/product_catalog",
     github:
@@ -192,4 +187,48 @@ export const projects: ProjectProps[] = [
     demo: "https://daryna-z.github.io/BOSE-landing/",
     github: "https://github.com/daryna-z/BOSE-landing",
   },
-];
+  {
+    index: 3,
+    title: "Visual Monitor — Website Visual Regression Tool",
+    description:
+      "An automated visual regression tool that detects website changes by comparing full-page screenshots against saved baselines and generating highlighted difference images for review.",
+    fullDescription: {
+      desc:
+        "Visual Monitor automates visual checks across 24 pages of the Lichtline website. It creates baseline screenshots on the first run, compares subsequent captures against those references, and saves timestamped screenshots and difference images when changes are detected. Visual differences are recorded without failing the test, allowing the remaining pages to be checked.",
+      automation:
+        "Developed with TypeScript, Playwright, and Node.js, using Chromium for browser automation. Integrated Pixelmatch for pixel-level image comparison and PNGJS for image processing. Stabilizes screenshots by removing cookie overlays, disabling animations, and masking video players.",
+    },
+    features: [
+      {
+        automation: [
+          "Multi-Page Monitoring: Automatically capture and compare full-page screenshots across 24 configured website pages.",
+          "Automatic Baseline Creation: Generate reference screenshots when a page does not yet have a saved baseline.",
+          "Visual Difference Detection: Compare screenshots using configurable color sensitivity and changed-pixel thresholds.",
+          "Highlighted Difference Images: Save updated screenshots alongside images highlighting detected pixel differences.",
+          "Screenshot Stabilization: Remove cookie and consent overlays and disable animations and transitions before capture.",
+          "Video Masking: Exclude video players, controls, and loading indicators from comparisons to reduce inconsistent results.",
+          "Dimension Change Detection: Identify screenshot size changes and save a separate visual indicator.",
+          "Non-Blocking Visual Checks: Record visual differences without failing the test or stopping subsequent page comparisons.",
+          "Timestamped Results: Preserve detected changes with page names and timestamps for later review.",
+          "Cleanup Command: Clear generated change images while preserving baseline screenshots.",
+        ],
+      },
+    ],
+    tech: [
+      "TypeScript",
+      "Playwright",
+      "Node.js",
+      "Chromium",
+      "Pixelmatch",
+      "PNGJS",
+    ],
+    icons: [
+      [sassIcon, "SCSS"],
+      [htmlIcon, "HTML"],
+      [cssIcon, "CSS"],
+    ],
+    image: [tool1],
+    mockup: tool1,
+    github: "https://github.com/darynazin/Visual-Monitor",
+  },
+]

@@ -39,6 +39,11 @@ function Project() {
             <p>{project.fullDescription.desc}</p>
           </div>
           <aside className="project__details">
+            {project.fullDescription.automation && (
+              <div className="project__detail">
+                <span>Automation</span>
+                <p>{project.fullDescription.automation}</p>
+              </div>)}
             {project.fullDescription.frontend && (
               <div className="project__detail">
                 <span>Frontend</span>
@@ -62,13 +67,25 @@ function Project() {
                   {feature.frontend && (
                     <div className="project__feature-group">
                       <h3>Frontend</h3>
-                      <p>{feature.frontend.join(", ")}</p>
+                      <p className="project__feature-description">
+                        {feature.frontend.map((item) => <div key={item}>{item}</div>)}
+                      </p>
                     </div>
                   )}
                   {feature.backend && (
                     <div className="project__feature-group">
                       <h3>Backend</h3>
-                      <p>{feature.backend.join(", ")}</p>
+                      <p className="project__feature-description">
+                        {feature.backend.map((item) => <div key={item}>{item}</div>)}
+                      </p>
+                    </div>
+                  )}
+                  {feature.automation && (
+                    <div className="project__feature-group">
+                      <h3>Automation</h3>
+                      <p className="project__feature-description">
+                        {feature.automation.map((item) => <div key={item}>{item}</div>)}
+                      </p>
                     </div>
                   )}
                 </div>

@@ -9,7 +9,7 @@ function Projects() {
   const navigate = useNavigate();
 
   function goToProject(slug: string) {
-    navigate(`/portfolio/projects/${slug}`);
+    navigate(`/portfolio/${slug}`);
   }
 
   useEffect(() => {
@@ -49,7 +49,8 @@ function Projects() {
                       </p>
                     </div>
                     <div>
-                      <a
+                      {project.demo && (
+                        <a
                         href={project.demo}
                         target="_blank"
                         className="project-card-btn"
@@ -57,6 +58,7 @@ function Projects() {
                       >
                         Demo
                       </a>
+                      )}
                       <a
                         href={project.github}
                         target="_blank"

@@ -8,7 +8,7 @@ function Header() {
   const topRef = useRef<HTMLDivElement>(null)
   const { pathname } = useLocation()
   const isHome = pathname === "/portfolio/"
-  const isProject = pathname.startsWith("/portfolio/projects")
+  const isProject = pathname.startsWith("/portfolio/") && !isHome;
 
   useEffect(() => {
     const node = topRef.current
@@ -26,7 +26,6 @@ function Header() {
   return (
     <header>
       <div ref={topRef} style={{ height: "1px" }} />
-
       <nav className={`nav-container${scrolled ? ' scrolled' : ''}`}>
         {isHome && (
         <button
@@ -44,8 +43,6 @@ function Header() {
           <Link to="/portfolio/" className="burger back-link">Home
           </Link>
         )}
-
-      
           <div className={`nav-wrapper${isProject ? " nav-wrapper--project" : ""}`}>
             <ul className={`navbar ${menuOpen ? "active" : ""}`}>
               {isHome && (

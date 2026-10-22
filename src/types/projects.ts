@@ -1,5 +1,6 @@
 type ProjectDescription = { 
   desc: string,
+  automation?: string,
   frontend?: string,
   backend?: string,
 };
@@ -10,11 +11,11 @@ export type ProjectProps = {
   title: string;
   description: string;
   fullDescription: ProjectDescription;
-  features: { frontend?: string[]; backend?: string[] }[];
+  features: { automation?: string[]; frontend?: string[]; backend?: string[] }[];
   tech: string[];
   icons: string[][];
   image: string[];
   mockup: string;
-  demo: string;
-  github: string;
+  demo?: string;
+  github?: string;
 };

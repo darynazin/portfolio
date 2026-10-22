@@ -16,7 +16,8 @@
   &-list {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 10rem;
+    padding-bottom: 20px;
 
     @include respond-to(md) {
       gap: 4rem;
