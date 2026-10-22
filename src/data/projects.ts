@@ -120,9 +120,9 @@ export const projects: ProjectProps[] = [
     fullDescription: {
       desc: "Nice Gadgets is an e-commerce web application built to deliver a streamlined online shopping experience. Users can explore a product catalog, refine results using filtering and sorting controls, view detailed product information, save favorite items, and manage their shopping cart through an intuitive, responsive interface.",
       frontend:
-        "Developed with React, Redux, HTML, and SCSS, using Webpack for bundling. Implemented reusable interface components and centralized state management to support product browsing, favorites, and shopping cart interactions.",
+        "Developed with React, Redux, HTML, and SCSS, using Webpack for bundling. Implemented reusable interface components and centralized state management to support product browsing, favorites, and shopping cart interactions. Deployed on GitHub Pages.",
       backend:
-        "The project includes a Node.js and TypeScript backend component deployed on Render. The frontend is deployed on GitHub Pages.",
+        "Developed with Node.js and TypeScript, deployed on Render.",
     },
     features: [
       {
@@ -166,7 +166,7 @@ export const projects: ProjectProps[] = [
     description:
       "A responsive landing page inspired by BOSE's premium digital brand experience, combining a clean visual hierarchy, carefully structured layouts, and responsive styling to showcase products across devices.",
     fullDescription: {
-      desc: "This project recreates the visual experience of a BOSE-inspired product landing page, with an emphasis on modern layout techniques, consistent spacing, and a polished presentation. The implementation focuses on translating a premium brand aesthetic into a responsive, accessible web interface.",
+      desc: "This project recreates the visual experience of a BOSE-inspired product landing page, with an emphasis on modern layout techniques. The implementation focuses on translating a premium brand aesthetic into a accessible web interface.",
       frontend:
         "Developed using semantic HTML, SCSS, and the BEM naming methodology to maintain a modular, organized, and maintainable stylesheet architecture. Deployed on GitHub Pages.",
     },

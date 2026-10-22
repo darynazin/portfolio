@@ -50,7 +50,22 @@ const Swiper: React.FC<SwiperProps> = ({ images }) => {
           disabled={isBeginning}
           aria-label="Previous slide"
         >
-          <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" /></svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#000000"
+            aria-hidden="true"
+          >
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+
         </button>
 
         <button
@@ -60,7 +75,22 @@ const Swiper: React.FC<SwiperProps> = ({ images }) => {
           disabled={isEnd}
           aria-label="Next slide"
         >
-          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#000000"
+            aria-hidden="true"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+
         </button>
       </div>
     </div>
