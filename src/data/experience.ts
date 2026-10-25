@@ -9,10 +9,11 @@ export const experienceData: ExperienceItem[] = [
         duration: '11/2025 – Present'
       },
         content: 
-          `Took ownership of an existing HubSpot website and continued development as the sole developer. 
-          Developed and maintained a custom HubSpot theme with responsive layouts and reusable components. 
-          Maintained and improved a TypeScript-based product synchronization service and resolved data and asset-related issues. 
-          Automated parts of the synchronization process and handled ongoing development, troubleshooting, and maintenance.`
+          `Developed a custom HubSpot theme with responsive layouts
+          and reusable components. Worked with APIs to retrieve data
+          from the PIM system and synchronize it with HubDB. Maintained
+          a TypeScript-based product synchronization service.
+          Developed Power Automate workflow for process automation.`
     },
     {
       index: 1,
