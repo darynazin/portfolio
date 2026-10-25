@@ -43,7 +43,7 @@ function Contacts() {
               <span>Get in touch</span> – Message Me!
             </h2>
             <p className="contact-description">
-              I’m open to new opportunities - big or small, creative or challenging. Feel free to reach out anytime! Whether you have a question or just want to connect, I’ll make sure to get back to you.
+              I’m open to new opportunities - big or small, creative or challenging. Feel free to reach out anytime! I’ll make sure to get back to you.
             </p>
 
             <div className="contact-info">
@@ -73,7 +73,7 @@ function Contacts() {
             <form ref={formRef} onSubmit={handleSubmit}>
               <div className="form-group name-email">
                 <div>
-                  <label htmlFor="fullName">Full Name</label>
+                  <label htmlFor="fullName">Name</label>
                   <input
                     type="text"
                     name="fullName"
@@ -103,16 +103,6 @@ function Contacts() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="enquiryType">Enquiry Type</label>
-                <CustomSelect
-                  options={[
-                    { value: "project", label: "Project Idea" },
-                    { value: "collab", label: "Collaboration" },
-                    { value: "other", label: "Other" },
-                  ]}
-                  placeholder="Select enquiry type"
-                  onChange={(value) => setEnquiryType(value)}
-                />
                 <input type="hidden" name="enquiryType" value={enquiryType} />
                 <ValidationError
                   prefix="EnquiryType"

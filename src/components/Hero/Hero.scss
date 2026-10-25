@@ -80,9 +80,9 @@
   }
 
   &-description {
-    font-size: 19px;
+    font-size: 17px;
     text-align: left;
-    // color: #aaa;
+    line-height: 1.5;
 
     @include respond-to(lg) {
       text-align: justify;
@@ -167,12 +167,13 @@
   &-btn {
     background: transparent;
     color: #34d399;
-    border: 3px solid #34d399;
+    border: 2px solid #34d399;
     padding: 8px 15px;
     border-radius: 36px;
     cursor: pointer;
+    font-weight: 400;
     transition: 0.3s;
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 1rem;
 
     @include respond-to(lg) {

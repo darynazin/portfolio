@@ -191,10 +191,10 @@ export const projects: ProjectProps[] = [
     index: 3,
     title: "Visual Monitor — Website Visual Regression Tool",
     description:
-      "An automated visual regression tool that detects website changes by comparing full-page screenshots against saved baselines and generating highlighted difference images for review.",
+      "Tool that detects website changes, developed to streamline regression testing when updating reusable website modules at Lichtline GmbH. The tool helped verify module changes remained consistent across pages.",
     fullDescription: {
       desc:
-        "Visual Monitor automates visual checks across 24 pages of the Lichtline website. It creates baseline screenshots on the first run, compares subsequent captures against those references, and saves timestamped screenshots and difference images when changes are detected. Visual differences are recorded without failing the test, allowing the remaining pages to be checked.",
+        "Developed to streamline regression testing when updating reusable website modules at Lichtline GmbH. The tool helped verify module changes remained consistent across pages where the same components were used in different contexts, reducing manual testing effort and making it easier to identify issues.",
       automation:
         "Developed with TypeScript, Playwright, and Node.js, using Chromium for browser automation. Integrated Pixelmatch for pixel-level image comparison and PNGJS for image processing. Stabilizes screenshots by removing cookie overlays, disabling animations, and masking video players.",
     },
@@ -223,9 +223,8 @@ export const projects: ProjectProps[] = [
       "PNGJS",
     ],
     icons: [
-      [sassIcon, "SCSS"],
-      [htmlIcon, "HTML"],
-      [cssIcon, "CSS"],
+      [nodeJsIcon, "Node.js"],
+      [typeScriptIcon, "TypeScript"],
     ],
     image: [tool1],
     mockup: tool1,

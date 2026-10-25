@@ -32,7 +32,7 @@ function Projects() {
   return (
     <section className="section-wrapper">
       <div className="projects section" id="projects">
-        <h1 className="projects-title">Things I’ve Worked on</h1>
+        <h1 className="projects-title">Selected Works</h1>
         <div className="projects-list" ref={projectsListRef}>
           {projects.map((project) => (
             <div key={project.index} className="project-card-container" onClick={() => goToProject(project.title.toLowerCase().replace(/\s+/g, "-"))}>
