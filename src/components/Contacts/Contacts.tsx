@@ -3,8 +3,6 @@ import 'sweetalert2/themes/bulma.css'
 import Swal from 'sweetalert2'
 import { useForm, ValidationError } from '@formspree/react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
-import CustomSelect from "../CustomSelect/CustomSelect";
 import "./Contacts.scss";
 
 function Contacts() {
