@@ -26,7 +26,7 @@ import type { ProjectProps } from "../types/projects";
 export const projects: ProjectProps[] = [
   {
     index: 0,
-    title: "VetiGo — Veterinary Booking Platform",
+    title: "VetiGo — Team Project",
     description:
       "A full-stack veterinary platform that simplifies pet care through appointment booking, pet profile management, nearby veterinarian discovery, and AI-powered first-aid guidance for pet emergencies.",
     fullDescription: {
@@ -41,7 +41,7 @@ export const projects: ProjectProps[] = [
         frontend: [
           "Authentication and Access Control: Secure user authentication with role-specific experiences for pet owners and veterinarians.",
           "Pet Profile Management: Create, update, view, and delete pet profiles and their associated information.",
-          "Appointment Management: Schedule, update, cancel, and filter veterinary appointments.",
+          "Appointment Management: Schedule, update, and cancel veterinary appointments.",
           "AI-Assisted Emergency Guidance: Access AI-generated first-aid information to help pet owners respond to potential emergencies.",
           "Veterinarian Discovery: Explore nearby veterinary services through an interactive Google Maps integration with marker clustering.",
           "Responsive User Interface: Access core platform functionality across desktop and mobile screen sizes.",
@@ -100,7 +100,7 @@ export const projects: ProjectProps[] = [
   },
   {
     index: 1,
-    title: "Nice Gadgets — E-commerce Platform",
+    title: "Nice Gadgets — Team Project",
     description:
       "A responsive e-commerce application for browsing and purchasing consumer electronics, featuring product discovery, detailed product pages, sorting and filtering, favorites, and shopping cart functionality.",
     fullDescription: {
@@ -157,22 +157,18 @@ export const projects: ProjectProps[] = [
   },
   {
     index: 2,
-    title: "BOSE — Responsive Landing Page",
+    title: "BOSE",
     description:
-      "A responsive landing page inspired by BOSE's premium digital brand experience, combining a clean visual hierarchy, carefully structured layouts, and responsive styling to showcase products across devices.",
+      "A responsive landing page inspired by BOSE's premium digital brand experience, combining a clean visual hierarchy, carefully structured layouts, and responsive styling.",
     fullDescription: {
       desc: "This project recreates the visual experience of a BOSE-inspired product landing page, with an emphasis on modern layout techniques. The implementation focuses on translating a premium brand aesthetic into a accessible web interface.",
       frontend:
-        "Developed using semantic HTML, SCSS, and the BEM naming methodology to maintain a modular, organized, and maintainable stylesheet architecture. Deployed on GitHub Pages.",
+        "Developed using semantic HTML, SCSS, and the BEM naming methodology to create a modular, organized, and maintainable stylesheet architecture. Deployed on GitHub Pages.",
     },
     features: [
       {
         frontend: [
           "Responsive Layout: Adapt the page structure to different viewport sizes and devices.",
-          "Structured Styling: Use SCSS to organize styles and improve maintainability.",
-          "BEM Methodology: Apply a consistent CSS naming convention for modular styling.",
-          "Visual Hierarchy: Use typography, spacing, and layout to create a clean, product-focused presentation.",
-          "Reusable Styling Patterns: Maintain consistency across page sections through structured CSS classes.",
         ],
       },
     ],
@@ -190,11 +186,11 @@ export const projects: ProjectProps[] = [
   {
     index: 3,
     title: "Visual Monitor — Website Visual Regression Tool",
-    description:
-      "Tool that detects website changes, developed to streamline regression testing when updating reusable website modules at Lichtline GmbH. The tool helped verify module changes remained consistent across pages.",
+    description: 
+    "Independently developed a tool for Lichtline GmbH’s website to detect visual changes and streamline regression testing when updating reusable website modules. Helped verify that module updates remained visually consistent across pages.",
     fullDescription: {
       desc:
-        "Developed to streamline regression testing when updating reusable website modules at Lichtline GmbH. The tool helped verify module changes remained consistent across pages where the same components were used in different contexts, reducing manual testing effort and making it easier to identify issues.",
+        "Developed to streamline regression testing when updating reusable website modules. The tool helped verify module changes remained consistent across pages where the same components were used in different contexts, reducing manual testing effort and making it easier to identify issues.",
       automation:
         "Developed with TypeScript, Playwright, and Node.js, using Chromium for browser automation. Integrated Pixelmatch for pixel-level image comparison and PNGJS for image processing. Stabilizes screenshots by removing cookie overlays, disabling animations, and masking video players.",
     },
