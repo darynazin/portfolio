@@ -17,14 +17,13 @@ export const experienceData: ExperienceItem[] = [
     {
       index: 1,
       title: {
-        company: 'Freelance',
+        company: 'Pet Projects',
         position: 'Full-Stack Engineer',
         duration: '12/2024 – 11/2025'
       },
         content: 
-          `Provided backend and frontend development services for various web projects, focusing on React, Node.js, MongoDB, and API integration. 
-          Delivered custom solutions, bug fixes, and consultation for web projects. 
-          Managed client requirements, deadlines, and provided ongoing technical support.`
+          `Developed backend and frontend services for various web projects, focusing on React, Node.js, MongoDB, and API integration. 
+          Delivered custom solutions and bug fixes.`
     },
     {
       index: 0,
