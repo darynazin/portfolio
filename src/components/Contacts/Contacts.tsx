@@ -1,14 +1,28 @@
 import { useState, useRef, useEffect } from 'react';
 import 'sweetalert2/themes/bulma.css'
 import Swal from 'sweetalert2'
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "./Contacts.scss";
+import { useTranslation } from "react-i18next";
 
 function Contacts() {
   const [state, handleSubmit] = useForm('xldwrvnd');
   const [enquiryType, setEnquiryType] = useState('');
   const formRef = useRef<HTMLFormElement | null>(null);
+  const { t } = useTranslation();
+
+  const getFieldError = (field: string) => {
+  const error = state.errors?.getFieldErrors(field)?.[0];
+
+  if (!error) return null;
+
+  if (error.code === "TYPE_EMAIL" || field === "email") {
+    return t("errors.invalidEmail");
+  }
+
+  return t("errors.required");
+};
 
   useEffect(() => {
   if (state.succeeded && formRef.current) {
@@ -32,16 +46,16 @@ function Contacts() {
   return (
     <section className="section-wrapper">
       <div className="section">
-        <h1 className="contact-subtitle">Contact</h1>
+        <h1 className="contact-subtitle">{t("contact.title")}</h1>
         <div className="contact" id="contact">
 
           <div className="contact-left">
 
             <h2 className="contact-title">
-              <span>Get in touch</span> – Message Me!
+              <span>{t("contact.getInTouch")}</span> {t("contact.messageMe")}
             </h2>
             <p className="contact-description">
-              I’m open to new opportunities - big or small, creative or challenging. Feel free to reach out anytime! I’ll make sure to get back to you.
+              {t("contact.description")}
             </p>
 
             <div className="contact-info">
@@ -71,71 +85,61 @@ function Contacts() {
             <form ref={formRef} onSubmit={handleSubmit}>
               <div className="form-group name-email">
                 <div>
-                  <label htmlFor="fullName">Name</label>
+                  <label htmlFor="fullName">{t("contact.form.name")}</label>
                   <input
                     type="text"
                     name="fullName"
-                    placeholder="your name"
+                    placeholder={t("contact.form.namePlaceholder")}
                     required
                   />
-                  <ValidationError
-                    prefix="Full Name"
-                    field="fullName"
-                    errors={state.errors}
-                  />
+                  {getFieldError("fullName") && (
+  <p className="form-error">{getFieldError("fullName")}</p>
+)}
                 </div>
                 <div>
-                  <label htmlFor="email">Email Address</label>
+                  <label htmlFor="email">{t("contact.form.email")}</label>
                   <input
                     type="email"
                     name="email"
-                    placeholder="e.g. example@gmail.com"
+                    placeholder={t("contact.form.emailPlaceholder")}
                     required
                   />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
+                  {getFieldError("email") && (
+                <p className="form-error">{getFieldError("email")}</p>
+              )}
                 </div>
               </div>
 
               <div className="form-group">
                 <input type="hidden" name="enquiryType" value={enquiryType} />
-                <ValidationError
-                  prefix="EnquiryType"
-                  field="enquiryType"
-                  errors={state.errors}
-                />
+                {getFieldError("enquiryType") && (
+  <p className="form-error">{getFieldError("enquiryType")}</p>
+)}
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{t("contact.form.message")}</label>
                 <textarea
                   name="message"
-                  placeholder="Write your message here..."
+                  placeholder={t("contact.form.messagePlaceholder")}
                   required
                 />
-                <ValidationError
-                  prefix="Message"
-                  field="message"
-                  errors={state.errors}
-                />
+                {getFieldError("message") && (
+  <p className="form-error">{getFieldError("message")}</p>
+)}
               </div>
 
               <div>
                 <label>
-                  <input type="checkbox" required /> I consent to the processing of my personal data.
+                  <input type="checkbox" required /> {t("contact.form.consent")}
 
                 </label>
-                <ValidationError
-                  prefix="Checkbox"
-                  field="checkbox"
-                  errors={state.errors}
-                />
+                {getFieldError("checkbox") && (
+  <p className="form-error">{getFieldError("checkbox")}</p>
+)}
               </div>
 
-              <button type="submit" className="btn-submit" disabled={state.submitting}>Send Message</button>
+              <button type="submit" className="btn-submit" disabled={state.submitting}>{t("contact.form.submit")}</button>
             </form>
           </div>
         </div>

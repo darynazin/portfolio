@@ -1,54 +1,109 @@
+
 import { useState } from "react";
-import './Footer.scss';
+import { useTranslation } from "react-i18next";
+import "./Footer.scss";
 
 function Footer() {
   const [showPrivacy, setShowPrivacy] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
       <footer className="footer">
-       
-          <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
-          <button className="footer-link" onClick={() => setShowPrivacy(true)}>
-            Privacy Policy
-          </button>
-     
+        <p>
+          &copy; {new Date().getFullYear()} {t("footer.copyright")}
+        </p>
+
+        <button
+          className="footer-link"
+          onClick={() => setShowPrivacy(true)}
+        >
+          {t("footer.privacyPolicy")}
+        </button>
       </footer>
 
       {showPrivacy && (
-        <div className="modal-overlay" onClick={() => setShowPrivacy(false)}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <button className="close-button" onClick={() => setShowPrivacy(false)}>×</button>
-            <h1>Privacy Policy</h1>
+        <div
+          className="modal-overlay"
+          onClick={() => setShowPrivacy(false)}
+        >
+          <div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="close-button"
+              onClick={() => setShowPrivacy(false)}
+              aria-label="Close"
+            >
+              ×
+            </button>
+
+            <h1>{t("footer.privacyPolicy")}</h1>
 
             <div className="privacy-section">
-              <h2>1. Information I Collect</h2>
-              <p>When you use the contact form on my website, I may collect the following personal information:</p>
+              <h2>
+                {t("footer.sections.informationCollected.title")}
+              </h2>
+
+              <p>
+                {t("footer.sections.informationCollected.description")}
+              </p>
+
               <ul>
-                <li>Full name</li>
-                <li>Email address</li>
-                <li>Any message or information you provide</li>
+                <li>
+                  {t("footer.sections.informationCollected.items.fullName")}
+                </li>
+                <li>
+                  {t("footer.sections.informationCollected.items.email")}
+                </li>
+                <li>
+                  {t("footer.sections.informationCollected.items.message")}
+                </li>
               </ul>
             </div>
 
             <div className="privacy-section">
-              <h2>2. How I Use Your Information</h2>
-              <p>The personal information you provide is used only for the purpose of:</p>
+              <h2>
+                {t("footer.sections.informationUsage.title")}
+              </h2>
+
+              <p>
+                {t("footer.sections.informationUsage.description")}
+              </p>
+
               <ul>
-                <li>Responding to your inquiries or messages</li>
-                <li>Improving my portfolio website</li>
+                <li>
+                  {t("footer.sections.informationUsage.items.responding")}
+                </li>
+                <li>
+                  {t("footer.sections.informationUsage.items.improving")}
+                </li>
               </ul>
-              <p>I do not sell, rent, or share your personal information with third parties, except as required by law.</p>
+
+              <p>
+                {t("footer.sections.informationUsage.sharing")}
+              </p>
             </div>
 
             <div className="privacy-section">
-              <h2>3. Data Storage and Security</h2>
-              <p>Your information is stored securely and only for as long as necessary to respond to your inquiries. I take reasonable precautions to protect your data against unauthorized access, alteration, or disclosure.</p>
+              <h2>
+                {t("footer.sections.dataSecurity.title")}
+              </h2>
+
+              <p>
+                {t("footer.sections.dataSecurity.description")}
+              </p>
             </div>
 
             <div className="privacy-section">
-              <h2>4. Changes to this Privacy Policy</h2>
-              <p>I may update this Privacy Policy from time to time. The updated version will be posted on this page with the “Effective Date” updated.</p>
+              <h2>
+                {t("footer.sections.policyChanges.title")}
+              </h2>
+
+              <p>
+                {t("footer.sections.policyChanges.description")}
+              </p>
             </div>
           </div>
         </div>

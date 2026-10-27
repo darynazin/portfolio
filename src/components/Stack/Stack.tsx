@@ -1,11 +1,13 @@
 import "./Stack.scss";
 import { stack } from "../../data/stack";
+import { useTranslation } from "react-i18next";
 
 const Stack: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="section-wrapper">
       <div className="stack section">
-      <h1 className="stack-title">My Stack</h1>
+      <h1 className="stack-title">{t("stack.title")}</h1>
       {stack.map((section) => (
         <div key={section.index} className="stack-section">
           <h2>{section.title}</h2>

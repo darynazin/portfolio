@@ -1,0 +1,307 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "experience": "Berufserfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "hero": {
+    "title": "Daryna Zinchenko",
+    "imageAlt": "Profilfoto von Daryna Zinchenko",
+    "description": "Full-Stack-Entwicklerin mit mehr als zwei Jahren Berufserfahrung in der Entwicklung und Wartung von Webanwendungen. Erfahrung mit React, TypeScript, Node.js, Express.js, REST-APIs, MongoDB und PostgreSQL. Schwerpunkt auf sauberem Code, Problemlösung und effektiver Zusammenarbeit in Entwicklungsteams.",
+    "cta": "Lebenslauf herunterladen"
+  },
+  "experience": {
+    "title": "Meine Berufserfahrung",
+    "items": [
+      {
+        "index": 2,
+        "title": {
+          "company": "Lichtline GmbH",
+          "position": "Full-Stack-Entwicklerin",
+          "duration": "11/2025 – heute"
+        },
+        "content": "Entwicklung eines individuellen HubSpot-Themes mit responsiven Layouts und wiederverwendbaren Komponenten. Anbindung von APIs zum Abruf von Daten aus dem PIM-System und deren Synchronisierung mit HubDB. Wartung eines TypeScript-basierten Dienstes zur Produktsynchronisierung. Entwicklung von Power-Automate-Workflows zur Prozessautomatisierung."
+      },
+      {
+        "index": 1,
+        "title": {
+          "company": "Eigene Projekte",
+          "position": "Full-Stack-Entwicklerin",
+          "duration": "12/2024 – 11/2025"
+        },
+        "content": "Entwicklung von Backend- und Frontend-Services für verschiedene Webprojekte mit Schwerpunkt auf React, Node.js, MongoDB und API-Integration. Umsetzung individueller Lösungen und Behebung von Fehlern."
+      },
+      {
+        "index": 0,
+        "title": {
+          "company": "Savoi GmbH",
+          "position": "SEO-Spezialistin",
+          "duration": "06/2021 – 08/2022"
+        },
+        "content": "Durchführung von Website-Audits und Erstellung von Optimierungsplänen sowie Ausarbeitung von Briefings für die Texterstellung. Ausbau analytischer Fähigkeiten und sicherer Umgang mit Webtools."
+      }
+    ]
+  },
+  "stack": {
+    "title": "Mein Tech-Stack"
+  },
+  "projects": {
+    "sections": {
+      "gallery": "Projekt-Screenshots",
+      "overview": "Überblick",
+      "features": "Funktionen",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "automation": "Automatisierung"
+    },
+    "title": "Ausgewählte Projekte",
+    "1": {
+      "index": 0,
+      "title": "VetiGo — Teamprojekt",
+      "description": "Eine Full-Stack-Plattform für Tiermedizin, die die Versorgung von Haustieren durch Terminbuchungen, Verwaltung von Tierprofilen, Suche nach Tierärzten in der Nähe und KI-gestützte Erste-Hilfe-Hinweise für tiermedizinische Notfälle vereinfacht.",
+      "fullDescription": {
+        "desc": "VetiGo ist eine Full-Stack-Webanwendung, die den Zugang zur tiermedizinischen Versorgung erleichtern soll. Sie ermöglicht es Tierhaltern, Profile ihrer Haustiere zu verwalten, Tierarzttermine zu vereinbaren, nahegelegene Kliniken zu finden und in dringenden Situationen auf KI-gestützte Erste-Hilfe-Hinweise zuzugreifen.",
+        "frontend": "Entwickelt mit React, Vite, Tailwind CSS und DaisyUI. Integration von Axios für die API-Kommunikation, Formik für die Formularverwaltung und Google Maps MarkerClusterer zur interaktiven Suche nach Tierärzten. Bereitstellung über Netlify.",
+        "backend": "Entwickelt mit Node.js, Express und MongoDB unter Verwendung von Mongoose für die Datenmodellierung. Integration von Firebase zur Dateispeicherung, OpenAI für KI-gestützte Unterstützung, Multer für Datei-Uploads sowie JWT und bcryptjs für Authentifizierung und Passwortsicherheit. Bereitstellung über Render."
+      },
+      "features": [
+        {
+          "frontend": [
+            "Authentifizierung und Zugriffskontrolle: Sichere Benutzerauthentifizierung mit rollenbasierten Funktionen für Tierhalter und Tierärzte.",
+            "Verwaltung von Tierprofilen: Profile von Haustieren und die zugehörigen Informationen erstellen, aktualisieren, anzeigen und löschen.",
+            "Terminverwaltung: Tierarzttermine vereinbaren, aktualisieren und stornieren.",
+            "KI-gestützte Notfallhilfe: Zugriff auf KI-generierte Erste-Hilfe-Informationen, die Tierhaltern helfen, auf mögliche Notfälle zu reagieren.",
+            "Tierarztsuche: Nahegelegene tiermedizinische Einrichtungen über eine interaktive Google-Maps-Integration mit Marker-Clustering entdecken.",
+            "Responsives Benutzerinterface: Nutzung der wichtigsten Plattformfunktionen auf Desktop- und Mobilgeräten."
+          ]
+        },
+        {
+          "backend": [
+            "Authentifizierung und Autorisierung: JWT-basierte Authentifizierung, Passwort-Hashing mit bcryptjs, Sitzungsvalidierung und Autorisierungs-Middleware.",
+            "Datei-Upload und Speicherung: Verarbeitung von hochgeladenen Dateien mithilfe von Multer und Firebase.",
+            "KI-Integration: Anbindung der OpenAI Chat Completions API zur Bereitstellung KI-gestützter Notfallhinweise.",
+            "Entwicklung von REST-APIs: Unterstützung der Frontend-Funktionen durch strukturierte API-Endpunkte und serverseitige Anfrageverarbeitung.",
+            "Datenbankverwaltung: Speicherung und Verwaltung von Anwendungsdaten mit MongoDB und Mongoose."
+          ]
+        }
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vite",
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Tailwind CSS",
+        "DaisyUI",
+        "Axios",
+        "Formik",
+        "Yup",
+        "Google Maps",
+        "Firebase",
+        "OpenAI API",
+        "JWT",
+        "Netlify",
+        "Render"
+      ],
+      "icons": [
+        ["htmlIcon", "HTML"],
+        ["cssIcon", "CSS"],
+        ["javaScriptIcon", "JavaScript"],
+        ["viteIcon", "Vite"],
+        ["reactIcon", "React"],
+        ["mongodbIcon", "MongoDB"],
+        ["mongooseIcon", "Mongoose"],
+        ["tailwindIcon", "Tailwind CSS"],
+        ["daisyUIIcon", "DaisyUI"],
+        ["axiosIcon", "Axios"],
+        ["formikIcon", "Formik"],
+        ["netlifyIcon", "Netlify"]
+      ],
+      "image": ["vet1", "vet4", "vet2", "vet3", "vet5", "vet6"],
+      "mockup": "vetMockup",
+      "demo": "https://vetigo.netlify.app/",
+      "github": "https://github.com/darynazin/VetiGo/blob/main/README.md"
+    },
+    "2": {
+      "index": 1,
+      "title": "Nice Gadgets — Teamprojekt",
+      "description": "Eine responsive E-Commerce-Anwendung zum Durchstöbern und Kaufen von Unterhaltungselektronik mit Produktsuche, detaillierten Produktseiten, Sortier- und Filterfunktionen, Favoriten und Warenkorb.",
+      "fullDescription": {
+        "desc": "Nice Gadgets ist eine E-Commerce-Webanwendung, die ein unkompliziertes Online-Einkaufserlebnis bietet. Nutzer können einen Produktkatalog durchsuchen, Ergebnisse mithilfe von Filter- und Sortierfunktionen eingrenzen, detaillierte Produktinformationen ansehen, Favoriten speichern und ihren Warenkorb über eine intuitive, responsive Benutzeroberfläche verwalten.",
+        "frontend": "Entwickelt mit React, Redux, HTML und SCSS; Webpack wird für das Bundling verwendet. Umsetzung wiederverwendbarer UI-Komponenten und einer zentralisierten Zustandsverwaltung für die Produktsuche, Favoriten und Warenkorbfunktionen. Bereitstellung über GitHub Pages.",
+        "backend": "Entwickelt mit Node.js und TypeScript, bereitgestellt über Railway."
+      },
+      "features": [
+        {
+          "frontend": [
+            "Produktkatalog: Eine strukturierte Auswahl an Unterhaltungselektronik durchsuchen und detaillierte Produktinformationen aufrufen.",
+            "Filtern und Sortieren: Produktlisten eingrenzen, um passende Produkte schneller zu finden.",
+            "Favoritenverwaltung: Bevorzugte Produkte speichern und erneut aufrufen.",
+            "Warenkorb: Produkte zum Warenkorb hinzufügen und ausgewählte Artikel verwalten.",
+            "Zustandsverwaltung: Redux zur Koordination des Anwendungszustands über interaktive Shopping-Funktionen hinweg einsetzen.",
+            "Responsives Design: Ein einheitliches Nutzungserlebnis auf verschiedenen Bildschirmgrößen ermöglichen."
+          ]
+        },
+        {
+          "backend": [
+            "Entwicklung einer RESTful API für einen Online-Elektronikshop mit Smartphones und Tablets.",
+            "Implementierung von Endpunkten zum Abrufen von Produktlisten und detaillierten Produktinformationen anhand der ID.",
+            "Implementierung der Produktsortierung nach Preis, Neuheiten und alphabetischer Reihenfolge.",
+            "Implementierung einer Paginierung mit konfigurierbaren Seitennummern und Seitengrößen.",
+            "Erstellung von Endpunkten zum Abrufen der Produkte mit den höchsten Rabatten.",
+            "Ergänzung von Endpunkten zum Abrufen der Gesamtanzahl von Smartphones und Tablets.",
+            "Entwicklung einheitlicher API-Routen zur Unterstützung dynamischer Produktlisten, Produktdetailseiten und Rabattbereiche."
+          ]
+        }
+      ],
+      "tech": [
+        "React",
+        "Redux",
+        "TypeScript",
+        "Node.js",
+        "HTML",
+        "SCSS",
+        "Webpack",
+        "GitHub Pages",
+        "Railway"
+      ],
+      "icons": [
+        ["reactIcon", "React"],
+        ["nodeJsIcon", "Node.js"],
+        ["typeScriptIcon", "TypeScript"],
+        ["reduxIcon", "Redux"],
+        ["htmlIcon", "HTML"]
+      ],
+      "image": ["gadgets1", "gadgets2", "gadgets3", "gadgets4"],
+      "mockup": "gadgetsMockup",
+      "demo": "https://daryna-z.github.io/product_catalog",
+      "github": "https://github.com/orgs/fe-oct22-wonder-devs/repositories"
+    },
+    "3": {
+      "index": 3,
+      "title": "BOSE",
+      "description": "Eine responsive Landingpage, inspiriert vom hochwertigen digitalen Markenauftritt von BOSE. Sie kombiniert eine klare visuelle Hierarchie, sorgfältig strukturierte Layouts und responsives Styling.",
+      "fullDescription": {
+        "desc": "Dieses Projekt bildet das visuelle Erlebnis einer von BOSE inspirierten Produkt-Landingpage nach und legt den Schwerpunkt auf moderne Layout-Techniken. Ziel der Umsetzung ist es, die Ästhetik einer Premium-Marke in eine zugängliche Weboberfläche zu übertragen.",
+        "frontend": "Entwickelt mit semantischem HTML, SCSS und der BEM-Namenskonvention, um eine modulare, übersichtliche und wartbare Stylesheet-Architektur zu schaffen. Bereitstellung über GitHub Pages."
+      },
+      "features": [
+        {
+          "frontend": [
+            "Responsives Layout: Anpassung der Seitenstruktur an unterschiedliche Viewport-Größen und Geräte."
+          ]
+        }
+      ],
+      "tech": ["HTML", "CSS", "SCSS", "BEM", "GitHub Pages"],
+      "icons": [
+        ["sassIcon", "SCSS"],
+        ["htmlIcon", "HTML"],
+        ["cssIcon", "CSS"]
+      ],
+      "image": ["bose1", "bose2", "bose3"],
+      "mockup": "boseMockup",
+      "demo": "https://daryna-z.github.io/BOSE-landing/",
+      "github": "https://github.com/daryna-z/BOSE-landing"
+    },
+    "4": {
+      "index": 3,
+      "title": "Visual Monitor — Tool für visuelle Regressionstests",
+      "description": "Eigenständige Entwicklung eines Tools für die Website der Lichtline GmbH, um visuelle Änderungen zu erkennen und Regressionstests bei der Aktualisierung wiederverwendbarer Website-Module zu vereinfachen. Das Tool half dabei, die visuelle Konsistenz aktualisierter Module auf verschiedenen Seiten zu überprüfen.",
+      "fullDescription": {
+        "desc": "Entwickelt, um Regressionstests bei der Aktualisierung wiederverwendbarer Website-Module zu vereinfachen. Das Tool half dabei, die Konsistenz von Moduländerungen auf verschiedenen Seiten zu überprüfen, auf denen dieselben Komponenten in unterschiedlichen Kontexten verwendet wurden. Dadurch wurde der manuelle Testaufwand reduziert und die Fehlererkennung erleichtert.",
+        "automation": "Entwickelt mit TypeScript, Playwright und Node.js unter Verwendung von Chromium zur Browserautomatisierung. Integration von Pixelmatch für pixelgenaue Bildvergleiche und PNGJS für die Bildverarbeitung. Stabilisierung der Screenshots durch Entfernen von Cookie-Overlays, Deaktivieren von Animationen und Maskieren von Videoplayern."
+      },
+      "features": [
+        {
+          "automation": [
+            "Überwachung mehrerer Seiten: Automatische Erstellung und Vergleich von ganzseitigen Screenshots für 24 konfigurierte Website-Seiten.",
+            "Automatische Erstellung von Referenzbildern: Generierung von Referenz-Screenshots, wenn für eine Seite noch kein Referenzbild gespeichert ist.",
+            "Erkennung visueller Unterschiede: Vergleich von Screenshots mithilfe konfigurierbarer Farbempfindlichkeit und Schwellenwerte für geänderte Pixel.",
+            "Hervorhebung von Unterschieden: Speicherung aktualisierter Screenshots zusammen mit Bildern, die erkannte Pixelunterschiede hervorheben.",
+            "Screenshot-Stabilisierung: Entfernen von Cookie- und Einwilligungs-Overlays sowie Deaktivieren von Animationen und Übergängen vor der Aufnahme.",
+            "Maskierung von Videos: Ausschluss von Videoplayern, Steuerelementen und Ladeanzeigen aus Vergleichen, um inkonsistente Ergebnisse zu reduzieren.",
+            "Erkennung von Größenänderungen: Erkennung veränderter Screenshot-Abmessungen und Speicherung einer separaten visuellen Kennzeichnung.",
+            "Nicht blockierende visuelle Prüfungen: Protokollierung visueller Unterschiede, ohne den Test fehlschlagen zu lassen oder nachfolgende Seitenvergleiche zu stoppen.",
+            "Zeitgestempelte Ergebnisse: Speicherung erkannter Änderungen mit Seitennamen und Zeitstempeln zur späteren Überprüfung.",
+            "Bereinigungsbefehl: Löschen generierter Änderungsbilder unter Beibehaltung der Referenz-Screenshots."
+          ]
+        }
+      ],
+      "tech": [
+        "TypeScript",
+        "Playwright",
+        "Node.js",
+        "Chromium",
+        "Pixelmatch",
+        "PNGJS"
+      ],
+      "icons": [
+        ["nodeJsIcon", "Node.js"],
+        ["typeScriptIcon", "TypeScript"]
+      ],
+      "image": ["tool1"],
+      "mockup": "tool1",
+      "github": "https://github.com/darynazin/Visual-Monitor"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "getInTouch": "Kontakt aufnehmen",
+    "messageMe": " – Schreib mir!",
+    "description": "Ich bin offen für neue Möglichkeiten – ob groß oder klein, kreativ oder anspruchsvoll. Melde dich gerne jederzeit bei mir! Ich werde mich so bald wie möglich bei dir melden.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "z. B. beispiel@gmail.com",
+      "message": "Nachricht",
+      "messagePlaceholder": "Schreibe deine Nachricht hier ...",
+      "consent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten zu.",
+      "submit": "Nachricht senden"
+    }
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutzerklärung",
+    "sections": {
+      "informationCollected": {
+        "title": "1. Welche Informationen ich erhebe",
+        "description": "Wenn du das Kontaktformular auf meiner Website nutzt, erhebe ich möglicherweise folgende personenbezogene Daten:",
+        "items": {
+          "fullName": "Vollständiger Name",
+          "email": "E-Mail-Adresse",
+          "message": "Alle Nachrichten oder Informationen, die du angibst"
+        }
+      },
+      "informationUsage": {
+        "title": "2. Wie ich deine Informationen verwende",
+        "description": "Die von dir bereitgestellten personenbezogenen Daten werden ausschließlich zu folgendem Zweck verwendet:",
+        "items": {
+          "responding": "Beantwortung deiner Anfragen oder Nachrichten",
+          "improving": "Verbesserung meiner Portfolio-Website"
+        },
+        "sharing": "Ich verkaufe, vermiete oder gebe deine personenbezogenen Daten nicht an Dritte weiter, es sei denn, dies ist gesetzlich vorgeschrieben."
+      },
+      "dataSecurity": {
+        "title": "3. Datenspeicherung und Sicherheit",
+        "description": "Deine Daten werden sicher und nur so lange gespeichert, wie es zur Beantwortung deiner Anfragen erforderlich ist. Ich treffe angemessene Vorkehrungen, um deine Daten vor unbefugtem Zugriff, Veränderung oder Offenlegung zu schützen."
+      },
+      "policyChanges": {
+        "title": "4. Änderungen dieser Datenschutzerklärung",
+        "description": "Ich kann diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Die aktualisierte Version wird auf dieser Seite veröffentlicht und das Datum des Inkrafttretens entsprechend angepasst."
+      }
+    }
+  },
+  "errors": {
+    "required": "Dieses Feld ist erforderlich.",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "submissionFailed": "Beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+    "noProject": "Wir konnten dieses Projekt nicht finden."
+  }
+}
